@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*  Table of contents:
+
+    1. Global styles
+    2. Typography
+    3. Layout
+        3.1 Section
+        3.2 Article
+        3.3 Form
+        3.4 Table
+        3.5 Summary
+        3.6 Misc. Positions
+    4. Components
+        4.1 Nav-bar
+        4.2 Grid
+        4.3 Switch
+        4.4 Slider
+*/
+
+/*  
+    ================
+    1. Global styles
+    ================
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 100%; /*16px*/
+  line-height: 1.75;
+}
+
+/*  
+    ==============
+    2. Typography
+    ==============
+*/
+/* ----- Font size is "Major Third" from https://type-scale.com/ -----  */
+
+p {
+  padding-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+.small-text {
+  font-size: 0.889rem;
+}
+
+.semi-bold {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+a {
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
+}
+
+.external-link {
+  margin: 0 4px 0 2px;
+}
+
+.external-link::after {
+  content: "";
+  background-image: url(../images/foreign.svg);
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  /* top: 2px; */
+  left: 4px;
+  width: .9rem;
+  height: .9rem;
+  filter: invert(0%) sepia(11%) saturate(7481%) hue-rotate(175deg) brightness(110%) contrast(91%);
+}
+
+/*  
+    =============
+    3. Layout
+    =============
+*/
+
+/* ----- 3.1 Header ----- */
+
+header {
+}
+
+/* ----- 3.2 Section ----- */
+
+section {
+}
+
+/* ----- 3.3 Article ----- */
+
+article {
+}
+
+/* ----- 3.4 Form ----- */
+
+form {
+}
+
+/* ----- 3.5 Table ----- */
+
+table {
+}
+
+/* ----- 3.6 Summary  ----- */
+
+details {
+}
+
+/* ----- 3.7 Footer  ----- */
+
+footer {
+}
+
+/* ----- 3.8 Misc. Positions ----- */
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*  
+    =============
+    Components
+    =============
+*/
+
+.box {
+  width: 400px;
+  /* height: 400px; */
+  padding: var(--cssmall-spacing-s);
+  margin: var(--cssmall-spacing-xl);
+}
+
+/* ----- 4.1 Nav-bar ----- */
+
+nav {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding: var(--cssmall-spacing-s);
+}
+
+nav a {
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 2px;
+  background: linear-gradient(var(--cssmall-color-primary),var(--cssmall-color-primary)) bottom;
+  background-size: 0% 2px;
+  background-repeat:no-repeat;
+  transition: all 0.45s;
+}
+
+nav a:hover,
+nav a:focus {
+  background-size: 50% 2px; /*width:100% height:2px*/
+  outline: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.nav-btn {
+  cursor: default;
+  pointer-events: none;
+  display: none;
+}
+
+.nav-logo {
+  padding-left: var(--cssmall-spacing-s);
+}
+
+.nav-some {
+  /* color: var(--cssmall-color-primary); */
+}
+
+/* ----- 4.2 Grid ----- */
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--cssmall-spacing-s);
+  overflow: hidden;
+}
+
+/* ----- 4.3 Switch ----- */
+
+.switch-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.switch-container::after {
+  content: "Switch text here!";
+  position: relative;
+  left: var(--cssmall-spacing-s);
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+}
+
+.switch_toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.switch [type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* default states */
+
+.switch_toggle::before,
+.switch_toggle::after {
+  content: '';
+  display: block;
+  transition: all .2s ease-out;
+  background: var(--cssmall-color-neutral-lighter);
+}
+
+.switch_toggle::before {
+  height: 1.3em;
+  width: 3em;
+  border-radius: 0.65em;
+  opacity: 0.6;
+}
+
+.switch_toggle::after {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(0, -50%);
+  height: .8em;
+  width: .8em;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.4);
+}
+
+/* special states */
+.switch [type=checkbox]:hover+.switch_toggle:hover::before,
+.switch [type=checkbox]:hover+.switch_toggle:hover::after {
+  background-color: var(--cssmall-color-neutral-light);
+}
+
+.switch [type=checkbox]:focus+.switch_toggle::before, a:focus {
+  outline: var(--cssmall-color-neutral-dark) 1px solid;
+}
+
+.switch [type=checkbox]:disabled+.switch_toggle {
+  cursor: not-allowed;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.switch [type=checkbox]:disabled:hover+.switch_toggle:hover::before,
+.switch [type=checkbox]:disabled:hover+.switch_toggle:hover::after {
+  background-color: var(--cssmall-color-neutral-lighter);
+}
+
+.switch [type=checkbox]:disabled+.switch_toggle::after {
+  box-shadow: none;
+}
+
+/* checked states */
+
+.switch [type=checkbox]:checked+.switch_toggle::before,
+.switch [type=checkbox]:checked+.switch_toggle::after{
+  background-color: var(--cssmall-color-succes);
+}
+
+.switch [type=checkbox]:checked+.switch_toggle::after {
+  transform: translate(calc(2em - 100%), -50%);
+}
+
+/* ----- 4.4 Slider ----- */
+
+.slide-container {
+  width: 100%;
+  margin: var(--cssmall-spacing-s) 0;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 15px;
+  outline: none;
+  background-color: var(--cssmall-color-neutral-lighter);
+  transition: background-color 0.2s;
+}
+
+.slider:hover,
+.slider:focus {
+  background-color: var(--cssmall-color-neutral-light);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50px;
+  background-color: var(--cssmall-color-primary);
+  box-shadow: 0px 0px 15px var(--cssmall-color-primary);
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50px;
+  background-color: var(--cssmall-color-primary);
+  box-shadow: 0px 0px 15px var(--cssmall-color-primary);
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.slider::-moz-range-progress {
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--cssmall-color-primary);
+}
+
+/* ----- Icons ----- */
+
+.icon {
+  width: 3em;
+  height: 3em;
+  align-items: center;
+}
+
+.logo {
+  fill: #ffffff;
+  padding: 0.2em;
+}
+
+@media only screen and (max-width: 880px) {
+  nav {
+    align-items: flex-start;
+  }
+  .navBtn {
+    display: block;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .nav-links {
+    display: none;
+    height: fit-content;
+  }
+  nav li {
+    display: flex;
+  }
+}
