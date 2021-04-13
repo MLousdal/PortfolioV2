@@ -32,7 +32,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 100%; /*16px*/
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
 /*  
@@ -52,6 +52,7 @@ h3,
 h4,
 h5 {
   line-height: 1.3;
+  padding-bottom: 1.3rem;
 }
 
 h1 {
@@ -108,6 +109,12 @@ a {
     =============
 */
 
+/* ----- 3.1 Main ----- */
+
+main {
+  /* margin: var(--cssmall-spacing-xl) 0; */
+}
+
 /* ----- 3.1 Header ----- */
 
 header {
@@ -118,9 +125,27 @@ header {
 section {
 }
 
+.hero {
+  text-align: center;       
+  height: 70vh;
+  flex-direction: column;
+  margin: var(--cssmall-spacing-xl) 0;
+}
+
+.hero-img {
+  border-radius: 100%;
+}
+
+.highlights-item {
+  padding: var(--cssmall-spacing-m) !important;
+  place-self: center;
+  align-self: stretch;
+}
+
 /* ----- 3.3 Article ----- */
 
 article {
+  text-align: left;
 }
 
 /* ----- 3.4 Form ----- */
@@ -141,6 +166,18 @@ details {
 /* ----- 3.7 Footer  ----- */
 
 footer {
+  padding: var(--cssmall-spacing-m) 0 var(--cssmall-spacing-xs) 0;
+  flex-direction: column;
+  margin-top: var(--cssmall-spacing-xl);
+}
+
+footer i {
+  padding: var(--cssmall-spacing-s);
+  font-size: xx-large;
+}
+
+footer p {
+  padding-bottom: 0;
 }
 
 /* ----- 3.8 Misc. Positions ----- */
@@ -156,9 +193,16 @@ footer {
   align-items: center;
 }
 
-.wrapper {
+.wrapper-outer{
+  max-width: 1200px;
   width: 80%;
-  margin: 0 auto;
+  margin: var(--cssmall-spacing-xl) auto;
+}
+
+.wrapper-inner {
+  width: 50rem;
+  max-width: 80%;
+  margin: var(--cssmall-spacing-xl) auto;
 }
 
 /*  
@@ -168,10 +212,10 @@ footer {
 */
 
 .box {
-  width: 400px;
-  /* height: 400px; */
-  padding: var(--cssmall-spacing-s);
-  margin: var(--cssmall-spacing-xl);
+  padding: var(--cssmall-spacing-l);
+  text-align: center;
+  border-radius: var(--cssmall-border-radius);
+  flex-direction: column;
 }
 
 /* ----- 4.1 Nav-bar ----- */
@@ -180,8 +224,13 @@ nav {
   display: inline-flex;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  height: 64px;
+  background-color: var(--cssmall-color-neutral-white);
+  box-shadow: 0px 0px 20px var(--cssmall-color-neutral-lighter);
+  position: fixed;
+  top: 0;
 }
 
 nav ul {
@@ -222,172 +271,67 @@ nav a:focus {
 }
 
 .nav-logo {
-  padding-left: var(--cssmall-spacing-s);
-}
-
-.nav-some {
-  /* color: var(--cssmall-color-primary); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: var(--cssmall-spacing-s);
 }
 
 /* ----- 4.2 Grid ----- */
 
 .grid-main {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--cssmall-spacing-m);
+}
+
+.case1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.case2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.case3 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.grid-skills {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: var(--cssmall-spacing-s);
-  overflow: hidden;
 }
 
-/* ----- 4.3 Switch ----- */
-
-.switch-container {
-  display: inline-flex;
+.skill {
+  text-align: center;
   align-items: center;
-}
-
-.switch-container::after {
-  content: "Switch text here!";
-  position: relative;
-  left: var(--cssmall-spacing-s);
-}
-
-.switch {
-  display: inline-flex;
-  align-items: center;
-}
-
-.switch_toggle {
-  position: relative;
-  cursor: pointer;
-}
-
-.switch [type=checkbox] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* default states */
-
-.switch_toggle::before,
-.switch_toggle::after {
-  content: '';
-  display: block;
-  transition: all .2s ease-out;
-  background: var(--cssmall-color-neutral-lighter);
-}
-
-.switch_toggle::before {
-  height: 1.3em;
-  width: 3em;
-  border-radius: 0.65em;
-  opacity: 0.6;
-}
-
-.switch_toggle::after {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  transform: translate(0, -50%);
-  height: .8em;
-  width: .8em;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.4);
-}
-
-/* special states */
-.switch [type=checkbox]:hover+.switch_toggle:hover::before,
-.switch [type=checkbox]:hover+.switch_toggle:hover::after {
-  background-color: var(--cssmall-color-neutral-light);
-}
-
-.switch [type=checkbox]:focus+.switch_toggle::before, a:focus {
-  outline: var(--cssmall-color-neutral-dark) 1px solid;
-}
-
-.switch [type=checkbox]:disabled+.switch_toggle {
-  cursor: not-allowed;
-  filter: grayscale(100%);
-  opacity: 0.6;
-}
-
-.switch [type=checkbox]:disabled:hover+.switch_toggle:hover::before,
-.switch [type=checkbox]:disabled:hover+.switch_toggle:hover::after {
-  background-color: var(--cssmall-color-neutral-lighter);
-}
-
-.switch [type=checkbox]:disabled+.switch_toggle::after {
-  box-shadow: none;
-}
-
-/* checked states */
-
-.switch [type=checkbox]:checked+.switch_toggle::before,
-.switch [type=checkbox]:checked+.switch_toggle::after{
-  background-color: var(--cssmall-color-succes);
-}
-
-.switch [type=checkbox]:checked+.switch_toggle::after {
-  transform: translate(calc(2em - 100%), -50%);
-}
-
-/* ----- 4.4 Slider ----- */
-
-.slide-container {
-  width: 100%;
-  margin: var(--cssmall-spacing-s) 0;
-}
-
-.slider {
-  appearance: none;
-  width: 100%;
-  height: 8px;
-  border-radius: 15px;
-  outline: none;
-  background-color: var(--cssmall-color-neutral-lighter);
-  transition: background-color 0.2s;
-}
-
-.slider:hover,
-.slider:focus {
-  background-color: var(--cssmall-color-neutral-light);
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 28px;
-  height: 28px;
-  border: 0;
-  border-radius: 50px;
-  background-color: var(--cssmall-color-primary);
-  box-shadow: 0px 0px 15px var(--cssmall-color-primary);
-  cursor: pointer;
-  position: relative;
-  top: -10px;
-}
-
-.slider::-moz-range-thumb {
-  appearance: none;
-  width: 28px;
-  height: 28px;
-  border: 0;
-  border-radius: 50px;
-  background-color: var(--cssmall-color-primary);
-  box-shadow: 0px 0px 15px var(--cssmall-color-primary);
-  cursor: pointer;
-}
-
-.slider::-webkit-slider-runnable-track {
-  height: 100%;
-  border-radius: 50px;
-}
-
-.slider::-moz-range-progress {
-  height: 100%;
-  border-radius: inherit;
+  padding: var(--cssmall-spacing-xs);
+  border-radius: var(--cssmall-border-radius);
   background-color: var(--cssmall-color-primary);
 }
+
+
+/* ----- 4.3 Buttons ----- */
+
+.btn {
+  font-size: larger;
+  padding: var(--cssmall-spacing-xs) var(--cssmall-spacing-s);
+  margin: var(--cssmall-spacing-s);
+  margin-top: 20px;
+  border: solid 4px var(--cssmall-color-text-on-primary);
+  border-radius: var(--cssmall-border-radius);
+  transition: transform 0.2s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;  
+}
+
 
 /* ----- Icons ----- */
 
@@ -402,7 +346,7 @@ nav a:focus {
   padding: 0.2em;
 }
 
-@media only screen and (max-width: 880px) {
+/* @media only screen and (max-width: 880px) {
   nav {
     align-items: flex-start;
   }
@@ -418,4 +362,4 @@ nav a:focus {
   nav li {
     display: flex;
   }
-}
+} */

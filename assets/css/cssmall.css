@@ -6,6 +6,7 @@
 :root {
     /* ----- Spacing variables */
     --cssmall-spacing: 1rem; /* Base spacing */
+    --cssmall-spacing-multiplier-xs: 0.5; 
     --cssmall-spacing-multiplier-m: 2; 
     --cssmall-spacing-multiplier-l: 3; 
     --cssmall-spacing-multiplier-xl: 4;
@@ -13,22 +14,28 @@
     /* Spacing translation */
     /* For use insert fx. ´var(--cssmall-spacing-s)´ into the wanted property */
     --cssmall-spacing-s: var(--cssmall-spacing);
+    --cssmall-spacing-xs: calc(var(--cssmall-spacing) * var(--cssmall-spacing-multiplier-xs));
     --cssmall-spacing-m: calc(var(--cssmall-spacing) * var(--cssmall-spacing-multiplier-m));
     --cssmall-spacing-l: calc(var(--cssmall-spacing) * var(--cssmall-spacing-multiplier-l));
     --cssmall-spacing-xl: calc(var(--cssmall-spacing) * var(--cssmall-spacing-multiplier-xl));
     
+    /* ----- Border variables */
+	--cssmall-border-radius: 8px;
+	
     /* ----- Colors ----- */
 
     /* --- Theme Colors --- */
-    --cssmall-color-primary: hsl(47, 100%, 50%);
-	--cssmall-color-secondary: hsl(227, 100%, 50%);
-	--cssmall-color-tertiary: hsl(287, 100%, 50%);
+    --cssmall-color-primary: hsl(50, 100%, 50%);
+	--cssmall-color-secondary: hsl(148, 35%, 18%);
+	--cssmall-color-tertiary: hsl(351, 71%, 34%);
+	--cssmall-color-quaternary: hsl(265, 57%, 36%);
     --cssmall-color-surface: hsl(47, 100%, 98%);
 
      /* Text colors for theme */
 	--cssmall-color-text-on-primary: hsl(47, 100%, 10%);
 	--cssmall-color-text-on-secondary: hsl(47, 100%, 99%);
-	--cssmall-color-text-on-tertiary: hsl(47, 100%, 10%);
+	--cssmall-color-text-on-tertiary: hsl(47, 100%, 99%);
+	--cssmall-color-text-on-quaternary: hsl(47, 100%, 99%);
 	--cssmall-color-text-on-surface: hsl(47, 100%, 10%);
 
     /* --- Neutral Colors --- */
@@ -49,8 +56,8 @@
 	--cssmall-color-text-on-error: hsl(47, 100%, 99%);
 
     /* ----- Shadows ----- */
-    --cssmall-shadow-normal: 10px 10px 40px;
-    --cssmall-shadow-btn: 3px 3px 20px;
+    --cssmall-shadow-normal: 5px 5px 40px;
+    --cssmall-shadow-btn: 0px 0px 20px;
 
     /* --- Theme Colors --- */
 	--cssmall-shadow-primary: var(--cssmall-shadow-normal) var(--cssmall-color-primary);
@@ -59,6 +66,8 @@
 	--cssmall-shadow-secondary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-secondary);
 	--cssmall-shadow-tertiary: var(--cssmall-shadow-normal) var(--cssmall-color-tertiary);
 	--cssmall-shadow-tertiary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-tertiary);
+	--cssmall-shadow-quaternary: var(--cssmall-shadow-normal) var(--cssmall-color-quaternary);
+	--cssmall-shadow-quaternary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-quaternary);
 
     /* --- Neutral Colors --- */
 	--cssmall-shadow-neutral-lighterx: var(--cssmall-shadow-normal) var(--cssmall-color-neutral-lighterx);
@@ -94,6 +103,10 @@
 	background-color: var(--cssmall-color-tertiary);
 	color: var(--cssmall-color-text-on-tertiary);
 }
+.color-quaternary {
+	background-color: var(--cssmall-color-quaternary);
+	color: var(--cssmall-color-text-on-quaternary);
+}
 .color-surface {
 	background-color: var(--cssmall-color-surface);
 	color: var(--cssmall-color-text-on-surface);
@@ -125,6 +138,7 @@
 .shadow-primary {box-shadow: var(--cssmall-shadow-primary);}
 .shadow-secondary {box-shadow: var(--cssmall-shadow-secondary);}
 .shadow-tertiary {box-shadow: var(--cssmall-shadow-tertiary);}
+.shadow-tertiary {box-shadow: var(--cssmall-shadow-quaternary);}
 
 /* Neutral Colors */
 .shadow-neutral-lighterx {box-shadow: var(--cssmall-shadow-neutral-lighterx);}
@@ -149,6 +163,9 @@
 .shadow-tertiary-btn {box-shadow: var(--cssmall-shadow-tertiary);}
 .shadow-tertiary-btn:hover,
 .shadow-tertiary-btn:focus {box-shadow: var(--cssmall-shadow-tertiary-pressed);}
+.shadow-quaternary-btn {box-shadow: var(--cssmall-shadow-quaternary);}
+.shadow-quaternary-btn:hover,
+.shadow-quaternary-btn:focus {box-shadow: var(--cssmall-shadow-quaternary-pressed);}
 
 /* Neutral Colors */
 .shadow-neutral-lighterx-btn {box-shadow: var(--cssmall-shadow-neutral-lighterx);}
