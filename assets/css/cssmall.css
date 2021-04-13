@@ -111,6 +111,21 @@
 	background-color: var(--cssmall-color-surface);
 	color: var(--cssmall-color-text-on-surface);
 }
+.text-color-primary {
+	color: var(--cssmall-color-primary);
+}
+.text-color-secondary {
+	color: var(--cssmall-color-secondary);
+}
+.text-color-tertiary {
+	color: var(--cssmall-color-tertiary);
+}
+.text-color-quaternary {
+	color: var(--cssmall-color-quaternary);
+}
+.text-color-surface {
+	color: var(--cssmall-color-surface);
+}
 
 /* Neutral Colors */
 .color-neutral-white {background-color: var(--cssmall-color-neutral-white);}
