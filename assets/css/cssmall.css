@@ -32,11 +32,11 @@
     --cssmall-color-surface: hsl(47, 100%, 98%);
 
      /* Text colors for theme */
-	--cssmall-color-text-on-primary: hsl(47, 100%, 10%);
+	--cssmall-color-text-on-primary: hsl(47, 100%, 5%);
 	--cssmall-color-text-on-secondary: hsl(47, 100%, 99%);
 	--cssmall-color-text-on-tertiary: hsl(47, 100%, 99%);
 	--cssmall-color-text-on-quaternary: hsl(47, 100%, 99%);
-	--cssmall-color-text-on-surface: hsl(47, 100%, 10%);
+	--cssmall-color-text-on-surface: hsl(47, 100%, 5%);
 
     /* --- Neutral Colors --- */
 	--cssmall-color-neutral-white: hsl(0, 0%, 100%);
@@ -51,8 +51,8 @@
 	--cssmall-color-error: hsl(7, 78%, 55%);
 
     /* Text colors for notifications */
-    --cssmall-color-text-on-succes: hsl(47, 100%, 10%);
-	--cssmall-color-text-on-warning: hsl(47, 100%, 10%);
+    --cssmall-color-text-on-succes: hsl(47, 100%, 5%);
+	--cssmall-color-text-on-warning: hsl(47, 100%, 5%);
 	--cssmall-color-text-on-error: hsl(47, 100%, 99%);
 
     /* ----- Shadows ----- */

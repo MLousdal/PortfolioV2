@@ -201,7 +201,8 @@ footer p {
 }
 
 .inline-flex {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -210,6 +211,7 @@ footer p {
 }
 
 .column-flex {
+  display: flex;
   flex-direction: column;
 }
 
@@ -249,6 +251,14 @@ footer p {
   display: flex;
 }
 
+.case-image {
+  height: 100%;
+}
+
+.case-logo-half {
+  width: 60%;
+}
+
 /* ----- 4.1 Nav-bar ----- */
 
 nav {
@@ -279,7 +289,7 @@ nav a {
   text-decoration: none;
   color: inherit;
   padding-bottom: 2px;
-  background: linear-gradient(var(--cssmall-color-primary),var(--cssmall-color-primary)) bottom;
+  background: linear-gradient(var(--cssmall-color-text-on-surface),var(--cssmall-color-text-on-surface)) bottom;
   background-size: 0% 2px;
   background-repeat:no-repeat;
   transition: all 0.45s;
@@ -360,12 +370,12 @@ nav a:focus {
 
 .caseText {
   grid-column: 1;
-  grid-row: 1 / 3;
-  place-self: center;
-  align-self: stretch;
+  grid-row: 1 / 4;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: var(--cssmall-spacing-m);
 }
 
 .mockUp1, .mockUp2, .mockUp3 {
