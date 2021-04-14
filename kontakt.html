@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website Base</title>
+        <meta name="description" content="WRITE A DESCRIPTION HERE!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/cssmall.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+        <script src="assets/js/scripts.js" defer></script>
+    </head>
+    <body class="color-surface">
+        <nav class="shadow-neutral-lighter">
+            <img src="assets/images/favicon-32x32.png" alt="logo" class="nav-logo">
+            <ul id="nav-links">
+                <li><a href="index.html">CASES</a></li>
+                <li><a href="om.html">OM</a></li>
+                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+            </ul>
+            <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <section class="hero color-primary center-flex">
+            <section class="box color-neutral-white shadow-neutral-lighter" id="kontakt">
+                <h1>Hvad kan jeg hjælpe dig med? 💭</h1>
+                <form class="wrapper-inner center-flex column-flex">
+                    <div class="inline-flex between-flex wide">
+                        <div class="column-flex left-flex">
+                            <label for="name">Navn:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="column-flex left-flex">
+                            <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="column-flex left-flex wide">
+                        <label for="besked">Besked:</label>
+                        <textarea id="besked" name="besked"></textarea>
+                    </div>           
+                    <input type="submit" value="Submit" class="btn color-primary shadow-neutral-light-btn">
+                </form>
+            </section>
+        </section>        
+    </body>
+</html>

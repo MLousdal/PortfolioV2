@@ -160,6 +160,34 @@ article {
 /* ----- 3.4 Form ----- */
 
 form {
+  height: 45vh;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--cssmall-spacing-l);
+}
+
+label {
+  margin-bottom: var(--cssmall-spacing-xs);
+}
+
+input {
+  width: 15rem;
+  padding: var(--cssmall-spacing-xs);
+  border-radius: var(--cssmall-border-radius);
+  border: 1px solid #000;
+}
+
+textarea {
+  width: 622px;
+  height: 8rem;
+  padding: var(--cssmall-spacing-xs);
+  border-radius: var(--cssmall-border-radius);
+  border: 1px solid #000;
+}
+
+#kontakt {
+  position: relative;
+  top: 10vh;
 }
 
 /* ----- 3.5 Picture ----- */
@@ -210,9 +238,17 @@ footer p {
   flex-direction: row;
 }
 
+.between-flex {
+  justify-content: space-between;
+}
+
 .column-flex {
   display: flex;
   flex-direction: column;
+}
+
+.left-flex {
+  align-items: flex-start;
 }
 
 .wrapper-outer{
@@ -229,6 +265,10 @@ footer p {
 
 .round {
   border-radius: 50%;
+}
+
+.wide {
+  width: 100%;
 }
 
 /*  
