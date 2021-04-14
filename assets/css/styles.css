@@ -209,6 +209,10 @@ footer p {
   flex-direction: row;
 }
 
+.column-flex {
+  flex-direction: column;
+}
+
 .wrapper-outer{
   max-width: 1200px;
   width: 80%;
@@ -238,6 +242,13 @@ footer p {
   flex-direction: column;
 }
 
+.case-item {
+  padding: var(--cssmall-spacing-s);
+  text-align: center;
+  border-radius: var(--cssmall-border-radius);
+  display: flex;
+}
+
 /* ----- 4.1 Nav-bar ----- */
 
 nav {
@@ -250,6 +261,7 @@ nav {
   background-color: var(--cssmall-color-neutral-white);
   position: fixed;
   top: 0;
+  z-index: 5;
 }
 
 nav ul {
