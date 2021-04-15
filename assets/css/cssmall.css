@@ -57,35 +57,47 @@
 
     /* ----- Shadows ----- */
     --cssmall-shadow-normal: 5px 5px 40px;
-    --cssmall-shadow-btn: 0px 0px 20px;
+    --cssmall-shadow-btn: 0px 5px 10px;
+    --cssmall-shadow-btn-pressed: 0px 2px 5px;
 
     /* --- Theme Colors --- */
 	--cssmall-shadow-primary: var(--cssmall-shadow-normal) var(--cssmall-color-primary);
-	--cssmall-shadow-primary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-primary);
+	--cssmall-shadow-primary-btn: var(--cssmall-shadow-btn) var(--cssmall-color-primary);
+	--cssmall-shadow-primary-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-primary);
 	--cssmall-shadow-secondary: var(--cssmall-shadow-normal) var(--cssmall-color-secondary);
-	--cssmall-shadow-secondary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-secondary);
+	--cssmall-shadow-secondary-btn: var(--cssmall-shadow-btn) var(--cssmall-color-secondary);
+	--cssmall-shadow-secondary-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-secondary);
 	--cssmall-shadow-tertiary: var(--cssmall-shadow-normal) var(--cssmall-color-tertiary);
-	--cssmall-shadow-tertiary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-tertiary);
+	--cssmall-shadow-tertiary-btn: var(--cssmall-shadow-btn) var(--cssmall-color-tertiary);
+	--cssmall-shadow-tertiary-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-tertiary);
 	--cssmall-shadow-quaternary: var(--cssmall-shadow-normal) var(--cssmall-color-quaternary);
-	--cssmall-shadow-quaternary-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-quaternary);
+	--cssmall-shadow-quaternary-btn: var(--cssmall-shadow-btn) var(--cssmall-color-quaternary);
+	--cssmall-shadow-quaternary-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-quaternary);
 
     /* --- Neutral Colors --- */
 	--cssmall-shadow-neutral-lighterx: var(--cssmall-shadow-normal) var(--cssmall-color-neutral-lighterx);
-	--cssmall-shadow-neutral-lighterx-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-lighterx);
+	--cssmall-shadow-neutral-lighterx-btn: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-lighterx);
+	--cssmall-shadow-neutral-lighterx-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-neutral-lighterx);
 	--cssmall-shadow-neutral-lighter: var(--cssmall-shadow-normal) var(--cssmall-color-neutral-lighter);
-	--cssmall-shadow-neutral-lighter-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-lighter);
+	--cssmall-shadow-neutral-lighter-btn: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-lighter);
+	--cssmall-shadow-neutral-lighter-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-neutral-lighter);
 	--cssmall-shadow-neutral-light: var(--cssmall-shadow-normal) var(--cssmall-color-neutral-light);
-	--cssmall-shadow-neutral-light-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-light);
+	--cssmall-shadow-neutral-light-btn: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-light);
+	--cssmall-shadow-neutral-light-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-neutral-light);
 	--cssmall-shadow-neutral-dark: var(--cssmall-shadow-normal) var(--cssmall-color-neutral-dark);
-	--cssmall-shadow-neutral-dark-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-dark);
+	--cssmall-shadow-neutral-dark-btn: var(--cssmall-shadow-btn) var(--cssmall-color-neutral-dark);
+	--cssmall-shadow-neutral-dark-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-neutral-dark);
 
     /* --- Notification colors --- */
     --cssmall-shadow-succes: var(--cssmall-shadow-normal) var(--cssmall-color-succes);
-	--cssmall-shadow-succes-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-succes);
+	--cssmall-shadow-succes-btn: var(--cssmall-shadow-btn) var(--cssmall-color-succes);
+	--cssmall-shadow-succes-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-succes);
     --cssmall-shadow-warning: var(--cssmall-shadow-normal) var(--cssmall-color-warning);
-	--cssmall-shadow-warning-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-warning);
+	--cssmall-shadow-warning-btn: var(--cssmall-shadow-btn) var(--cssmall-color-warning);
+	--cssmall-shadow-warning-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-warning);
     --cssmall-shadow-error: var(--cssmall-shadow-normal) var(--cssmall-color-error);
-	--cssmall-shadow-error-pressed: var(--cssmall-shadow-btn) var(--cssmall-color-error);
+	--cssmall-shadow-error-btn: var(--cssmall-shadow-btn) var(--cssmall-color-error);
+	--cssmall-shadow-error-pressed: var(--cssmall-shadow-btn-pressed) var(--cssmall-color-error);
 }
 
 /* ----- Classes ----- */
@@ -165,44 +177,3 @@
 .shadow-succes {box-shadow: var(--cssmall-shadow-succes);}
 .shadow-warning {box-shadow: var(--cssmall-shadow-warning);}
 .shadow-error {box-shadow: var(--cssmall-shadow-error);}
-
-
-/* --- Button shadows --- */
-/* Theme Colors */
-.shadow-primary-btn {box-shadow: var(--cssmall-shadow-primary);}
-.shadow-primary-btn:hover,
-.shadow-primary-btn:focus {box-shadow: var(--cssmall-shadow-primary-pressed);}
-.shadow-secondary-btn {box-shadow: var(--cssmall-shadow-secondary);}
-.shadow-secondary-btn:hover,
-.shadow-secondary-btn:focus {box-shadow: var(--cssmall-shadow-secondary-pressed);}
-.shadow-tertiary-btn {box-shadow: var(--cssmall-shadow-tertiary);}
-.shadow-tertiary-btn:hover,
-.shadow-tertiary-btn:focus {box-shadow: var(--cssmall-shadow-tertiary-pressed);}
-.shadow-quaternary-btn {box-shadow: var(--cssmall-shadow-quaternary);}
-.shadow-quaternary-btn:hover,
-.shadow-quaternary-btn:focus {box-shadow: var(--cssmall-shadow-quaternary-pressed);}
-
-/* Neutral Colors */
-.shadow-neutral-lighterx-btn {box-shadow: var(--cssmall-shadow-neutral-lighterx);}
-.shadow-neutral-lighterx-btn:hover,
-.shadow-neutral-lighterx-btn:focus {box-shadow: var(--cssmall-shadow-neutral-lighterx-pressed);}
-.shadow-neutral-lighter-btn {box-shadow: var(--cssmall-shadow-neutral-lighter);}
-.shadow-neutral-lighter-btn:hover,
-.shadow-neutral-lighter-btn:focus {box-shadow: var(--cssmall-shadow-neutral-lighter-pressed);}
-.shadow-neutral-light-btn {box-shadow: var(--cssmall-shadow-neutral-light);}
-.shadow-neutral-light-btn:hover,
-.shadow-neutral-light-btn:focus {box-shadow: var(--cssmall-shadow-neutral-light-pressed);}
-.shadow-neutral-dark-btn {box-shadow: var(--cssmall-shadow-neutral-dark);}
-.shadow-neutral-dark-btn:hover,
-.shadow-neutral-dark-btn:focus {box-shadow: var(--cssmall-shadow-neutral-dark-pressed);}
-
-/* Notification colors */
-.shadow-succes-btn {box-shadow: var(--cssmall-shadow-succes);}
-.shadow-succes-btn:hover,
-.shadow-succes-btn:focus {box-shadow: var(--cssmall-shadow-succes-pressed);}
-.shadow-warning-btn {box-shadow: var(--cssmall-shadow-warning);}
-.shadow-warning-btn:hover,
-.shadow-warning-btn:focus {box-shadow: var(--cssmall-shadow-warning-pressed);}
-.shadow-error-btn {box-shadow: var(--cssmall-shadow-error);}
-.shadow-error-btn:hover,
-.shadow-error-btn:focus {box-shadow: var(--cssmall-shadow-error-pressed);}

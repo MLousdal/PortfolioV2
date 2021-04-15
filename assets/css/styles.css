@@ -5,17 +5,19 @@
     1. Global styles
     2. Typography
     3. Layout
-        3.1 Section
-        3.2 Article
-        3.3 Form
-        3.4 Table
-        3.5 Summary
+        3.1 Hero
+        3.2 Highlights
+        3.3 Cases
+        3.4 Case items
+        3.5 Article
+        3.6 Forms
+        3.7 Picture
+        3.8 Footer
         3.6 Misc. Positions
     4. Components
         4.1 Nav-bar
         4.2 Grid
-        4.3 Switch
-        4.4 Slider
+        4.3 Buttons
 */
 
 /*  
@@ -51,6 +53,7 @@ h2,
 h3,
 h4,
 h5 {
+  text-align: center;
   line-height: 1.3;
   padding-bottom: 1.3rem;
 }
@@ -109,21 +112,7 @@ a {
     =============
 */
 
-/* ----- 3.1 Main ----- */
-
-main {
-  /* margin: var(--cssmall-spacing-xl) 0; */
-}
-
-/* ----- 3.1 Header ----- */
-
-header {
-}
-
-/* ----- 3.2 Section ----- */
-
-section {
-}
+/* ----- 3.1 Hero ----- */
 
 .hero {
   text-align: center;       
@@ -133,11 +122,58 @@ section {
 }
 
 .hero-img {
-  width: 600px;
+  width: 30vw;
+  min-width: 330px;
+  max-width: 800px;
 }
 
-.hero-btns {
-  margin: var(--cssmall-spacing-m);
+.personal-img {
+  max-width: 80%;
+}
+
+/* ----- 3.2 Grid main ----- */
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--cssmall-spacing-m);
+}
+
+.case1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.case2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.case3 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.case-item {
+  padding: var(--cssmall-spacing-m) var(--cssmall-spacing-s);
+  border-radius: var(--cssmall-border-radius);
+  display: flex;
+}
+
+.case-image {
+  height: 100%;
+}
+
+.case-logo-half {
+  width: 60%;
+}
+
+/* ----- 3.3 Highlights ----- */
+
+.grid-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--cssmall-spacing-s);
 }
 
 .highlights-item {
@@ -146,18 +182,75 @@ section {
   align-self: stretch;
 }
 
+/* ----- 3.3 Skills ----- */
+
+.grid-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--cssmall-spacing-s);
+}
+
+.grid-skills-2c {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--cssmall-spacing-s);
+}
+
+.skill {
+  text-align: center;
+  align-items: center;
+  padding: var(--cssmall-spacing-xs);
+  border-radius: var(--cssmall-border-radius);
+}
+
+/* ----- 3.5 Cases ----- */
+
+.grid-case {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 438px;
+  gap: var(--cssmall-spacing-s);
+  object-fit: contain;
+}
+
+.mockUp1, .mockUp2, .mockUp3 {
+  grid-column: 2 / span 2;
+}
+
+.mockUp1 {
+  grid-row: 1;
+}
+
+.mockUp2 {
+  grid-row: 2;
+}
+
+.mockUp3 {
+  grid-row: 3;
+}
+
+.caseText {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--cssmall-spacing-m);
+}
+
 .role {
   width: 100%;
   justify-content: space-between;
 }
 
-/* ----- 3.3 Article ----- */
+/* ----- 3.5 Article ----- */
 
 article {
   text-align: left;
 }
 
-/* ----- 3.4 Form ----- */
+/* ----- 3.6 Form ----- */
 
 form {
   height: 45vh;
@@ -170,7 +263,8 @@ label {
   margin-bottom: var(--cssmall-spacing-xs);
 }
 
-input {
+input[type="text"],
+input[type="email"] {
   width: 15rem;
   padding: var(--cssmall-spacing-xs);
   border-radius: var(--cssmall-border-radius);
@@ -190,7 +284,7 @@ textarea {
   top: 10vh;
 }
 
-/* ----- 3.5 Picture ----- */
+/* ----- 3.7 Picture ----- */
 
 picture img{
   object-fit: cover;
@@ -198,12 +292,7 @@ picture img{
   max-height: 100%;
 }
 
-/* ----- 3.6 Summary  ----- */
-
-details {
-}
-
-/* ----- 3.7 Footer  ----- */
+/* ----- 3.8 Footer  ----- */
 
 footer {
   padding: var(--cssmall-spacing-m) 0 var(--cssmall-spacing-xs) 0;
@@ -220,7 +309,7 @@ footer p {
   padding-bottom: 0;
 }
 
-/* ----- 3.8 Misc. Positions ----- */
+/* ----- 3.9 Misc. Positions ----- */
 
 .center-flex {
   display: flex;
@@ -284,21 +373,6 @@ footer p {
   flex-direction: column;
 }
 
-.case-item {
-  padding: var(--cssmall-spacing-s);
-  text-align: center;
-  border-radius: var(--cssmall-border-radius);
-  display: flex;
-}
-
-.case-image {
-  height: 100%;
-}
-
-.case-logo-half {
-  width: 60%;
-}
-
 /* ----- 4.1 Nav-bar ----- */
 
 nav {
@@ -307,8 +381,9 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 64px;
+  height: var(--cssmall-spacing-xl);
   background-color: var(--cssmall-color-neutral-white);
+  box-shadow: 0 0 10px var(--cssmall-color-neutral-dark);
   position: fixed;
   top: 0;
   z-index: 5;
@@ -358,129 +433,92 @@ nav a:focus {
   padding: var(--cssmall-spacing-s);
 }
 
-/* ----- 4.2 Grid ----- */
+/* ----- 4.2 Buttons ----- */
 
-.grid-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--cssmall-spacing-m);
-}
-
-.case1 {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-}
-
-.case2 {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-}
-
-.case3 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
-}
-
-.grid-skills {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--cssmall-spacing-s);
-}
-
-.grid-skills-2c {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--cssmall-spacing-s);
-}
-
-.skill {
-  text-align: center;
-  align-items: center;
-  padding: var(--cssmall-spacing-xs);
-  border-radius: var(--cssmall-border-radius);
-}
-
-.grid-case {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 438px;
-  gap: var(--cssmall-spacing-s);
-  object-fit: contain;
-}
-
-.caseText {
-  grid-column: 1;
-  grid-row: 1 / 4;
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--cssmall-spacing-m);
-}
-
-.mockUp1, .mockUp2, .mockUp3 {
-  grid-column: 2 / span 2;
-}
-
-.mockUp1 {
-  grid-row: 1;
-}
-
-.mockUp2 {
-  grid-row: 2;
-}
-
-.mockUp3 {
-  grid-row: 3;
-}
-
-/* ----- 4.3 Buttons ----- */
-
-.btn {
+.btn,
+input[type="submit"] {
   font-size: larger;
   padding: var(--cssmall-spacing-xs) var(--cssmall-spacing-s);
   margin: var(--cssmall-spacing-s);
   margin-top: 20px;
   border: solid 4px var(--cssmall-color-text-on-primary);
   border-radius: var(--cssmall-border-radius);
-  transition: transform 0.2s ease-in;
+  box-shadow: var(--cssmall-shadow-neutral-light-btn);
+  transition: all 0.2s ease-in;
 }
 
 .btn:hover,
 .btn:focus {
-  outline: none;  
+  outline: none;
+  box-shadow: var(--cssmall-shadow-neutral-light-pressed);
+  transform: scale(1.1);
 }
 
 .borderWhite {
   border: solid 4px var(--cssmall-color-text-on-secondary);
-}
-/* ----- Icons ----- */
-
-.icon {
-  width: 3em;
-  height: 3em;
-  align-items: center;
+  box-shadow: var(--cssmall-shadow-neutral-lighterx-btn);
 }
 
-.logo {
-  fill: #ffffff;
-  padding: 0.2em;
+.borderWhite:hover,
+.borderWhite:focus {
+  border: solid 4px var(--cssmall-color-text-on-secondary);
+  box-shadow: var(--cssmall-shadow-neutral-lighterx-pressed);
 }
 
-/* @media only screen and (max-width: 880px) {
-  nav {
-    align-items: flex-start;
+@media only screen and (max-width: 1150px) {
+  /* Grid highlights */
+  .grid-highlights {
+    grid-template-columns: 1fr;
   }
-  .navBtn {
-    display: block;
-    cursor: pointer;
-    pointer-events: all;
+  .highlights-item {
+    width: 80%;
+    min-width: 200px;
+    max-width: 350px;
   }
-  .nav-links {
-    display: none;
-    height: fit-content;
+}
+
+@media only screen and (max-width: 950px) {
+  /* Cases on landing page */
+  .grid-main {
+    grid-auto-rows: minmax(125px, 20vh);
   }
-  nav li {
-    display: flex;
+  .case-item {
+    flex-direction: row;
+    padding: var(--cssmall-spacing-xs);
+    justify-content: center;
+    align-items: center;
   }
-} */
+  .case-item>img {
+    width: 60%;
+  }
+  .case-image {
+    width: 30%;
+  }
+  .case1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  .case2 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+  .case3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  /* Skills */
+  .grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Box */
+  .box {
+    padding: var(--cssmall-spacing-m);
+  }
+  /* Wrapper inner */
+  .wrapper-inner {
+    width: inherit;
+    max-width: 100%;
+    /* margin: 0 auto; */
+  }
+}
