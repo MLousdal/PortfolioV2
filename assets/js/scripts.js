@@ -1,3 +1,5 @@
+// ----- Burger menu toggle -----
+
 function burgerToggle() {
     const navLinks = document.querySelector("#nav-links");
 
