@@ -1,92 +1,175 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website Base</title>
-        <meta name="description" content="WRITE A DESCRIPTION HERE!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/css/reset.css">
-        <link rel="stylesheet" href="../assets/css/cssmall.css">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/all.css">
-        <link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" />
-        <script src="/assets/js/scripts.js" defer></script>
-    </head>
-    <body class="color-surface">
-        <nav>
-            <img src="../assets/images/favicon-32x32.png" alt="logo" class="nav-logo">
-            <ul id="nav-links">
-                <li><a href="../index.html" class="active text-color-quarternary">CASES</a></li>
-                <li><a href="../om.html">OM</a></li>
-                <li><a href="../kontakt.html">KONTAKT</a></li>
-            </ul>
-            <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <section class="hero hero-case color-secondary center-flex row-flex">
-            <div>
-                <img src="../assets/images/aalborg/logo/aalborg-seeklogo-white.svg" alt="loopstudios logo">
-                <div class="inline-flex">
-                    <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/Sem2Tema1/Rubrics%20og%20opgaver/mmd2-tema1/" class="btn borderWhite" target="_blank">Demo</a>
-                    <a href="https://github.com/MLousdal/mmd2-tema1" class="btn borderWhite" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <picture class="hero-img">
-                <img src="../assets/images/aalborg/mockups/aalborg-phones.png" alt="hero mockup">
-            </picture>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Website Base</title>
+    <meta name="description" content="WRITE A DESCRIPTION HERE!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/cssmall.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/all.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <script src="/assets/js/scripts.js" defer></script>
+  </head>
+  <body class="color-surface">
+    <nav>
+      <img
+        src="../assets/images/favicon-32x32.png"
+        alt="logo"
+        class="nav-logo"
+      />
+      <ul id="nav-links">
+        <li>
+          <a href="../index.html" class="active text-color-quarternary"
+            >CASES</a
+          >
+        </li>
+        <li><a href="../om.html">OM</a></li>
+        <li><a href="../kontakt.html">KONTAKT</a></li>
+      </ul>
+      <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section class="hero hero-case color-secondary center-flex row-flex">
+      <div>
+        <img
+          src="../assets/images/aalborg/logo/aalborg-seeklogo-white.svg"
+          alt="loopstudios logo"
+        />
+        <div class="inline-flex">
+          <a
+            href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/Sem2Tema1/Rubrics%20og%20opgaver/mmd2-tema1/"
+            class="btn borderWhite"
+            target="_blank"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/MLousdal/mmd2-tema1"
+            class="btn borderWhite"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <picture class="hero-img">
+        <img
+          src="../assets/images/aalborg/mockups/aalborg-phones.png"
+          alt="hero mockup"
+        />
+      </picture>
+    </section>
+    <main class="wrapper-outer grid-case">
+      <section class="caseText">
+        <div class="column-flex">
+          <p><b class="bold text-color-secondary">Type:</b> Web-app</p>
+          <p><b class="bold text-color-secondary">Rolle:</b> Udvikler</p>
+        </div>
+        <article>
+          <h2 class="text-color-secondary">Kunden</h2>
+          <p>
+            Under forårets Covid-19 nedlukning bevægede mange danskere sig
+            udenfor i naturen, og Danmarks tredje største kommune Aalborg
+            kommune, med et areal på over hundredetusinde hektar er ingen
+            undtagelse.
+          </p>
+        </article>
+        <article>
+          <h2 class="text-color-secondary">Opgaven</h2>
+          <p>
+            De almindelige foldere om kommunens vandre ruter, som kan findes
+            både digitalt og på print, er gode til informationssøgning, men ikke
+            ude på ruterne. Derfor skulle folderne omdannes til en moderne
+            web-app, mobilen er jo altid ved hånden.
+          </p>
+        </article>
+        <article>
+          <h2 class="text-color-secondary">Løsningen</h2>
+          <p>
+            Ud fra flere interviews med potentielle brugere havde vi en liste
+            over funktioner som web-appen skulle have. Vi udarbejdede en
+            filtrerings funktion som gav brugerne en række mulige vandreruter
+            baseret på bl.a. sværhedsgrad og længde. Derudover lavede vi også et
+            billede feed, og en profil side til deling af ture.
+          </p>
+        </article>
+        <section>
+          <h2 class="text-color-secondary">Anvendt teknologi</h2>
+          <div class="grid-skills-2c">
+            <p class="skill shadow-neutral-lighterx color-secondary">
+              Semantisk HTML
+            </p>
+            <p class="skill shadow-neutral-lighterx color-secondary">
+              Responsivt CSS
+            </p>
+            <p class="skill shadow-neutral-lighterx color-secondary">
+              Accessibility
+            </p>
+            <p class="skill shadow-neutral-lighterx color-secondary">
+              Teknisk SEO
+            </p>
+            <p class="skill shadow-neutral-lighterx color-secondary">GitHub</p>
+            <p class="skill shadow-neutral-lighterx color-secondary">
+              Adobe XD
+            </p>
+          </div>
         </section>
-        <main class="wrapper-outer grid-case">
-            <section class="caseText">
-                <div class="column-flex">
-                    <p><b class="bold text-color-secondary">Type:</b> Web-app</p>
-                    <p><b class="bold text-color-secondary">Rolle:</b> Udvikler</p>
-                </div>
-                <article>
-                    <h2 class="text-color-secondary">Kunden</h2>
-                    <p>Under forårets Covid-19 nedlukning bevægede mange danskere sig udenfor i naturen, og Danmarks tredje største kommune Aalborg kommune, med et areal på over hundredetusinde hektar er ingen undtagelse.</p>
-                </article>
-                <article>
-                    <h2 class="text-color-secondary">Opgaven</h2>
-                    <p>De almindelige foldere om kommunens vandre ruter, som kan findes både digitalt og på print, er gode til informationssøgning, men ikke ude på ruterne. Derfor skulle folderne omdannes til en moderne web-app, mobilen er jo altid ved hånden.</p>
-                </article>
-                <article>
-                    <h2 class="text-color-secondary">Løsningen</h2>
-                    <p>Ud fra flere interviews med potentielle brugere havde vi en liste over funktioner som web-appen skulle have. Vi udarbejdede en filtrerings funktion som gav brugerne en række mulige vandreruter baseret på bl.a. sværhedsgrad og længde. Derudover lavede vi også et billede feed, og en profil side til deling af ture.</p>
-                </article>
-                <section>
-                    <h2 class="text-color-secondary">Anvendt teknologi</h2>
-                    <div class="grid-skills-2c">
-                        <p class="skill shadow-neutral-lighterx color-secondary">Semantisk HTML</p>
-                        <p class="skill shadow-neutral-lighterx color-secondary">Responsivt CSS</p>
-                        <p class="skill shadow-neutral-lighterx color-secondary">Accessibility</p>
-                        <p class="skill shadow-neutral-lighterx color-secondary">Teknisk SEO</p>
-                        <p class="skill shadow-neutral-lighterx color-secondary">GitHub</p>
-                        <p class="skill shadow-neutral-lighterx color-secondary">Adobe XD</p>
-                    </div>
-                </section>
-            </section>
-            <picture class="mockUp1">
-                <img src="../assets/images/aalborg/mockups/mockup1.jpg" alt="mock-up af projektet">
-            </picture>
-            <picture class="mockUp2">
-                <img src="../assets/images/aalborg/mockups/mockup2.jpg" alt="mock-up af projektet">
-            </picture>
-            <picture class="mockUp3">
-                <img src="../assets/images/aalborg/mockups/mockup3.jpg" alt="mock-up af projektet">
-            </picture>
-        </main>
-        <footer class="color-secondary center-flex"> 
-            <h3 class="semi-bold">Find mig online</h3>
-            <section class="center-flex">
-                <a href="https://github.com/MLousdal" target="_blank" rel="external"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/mads-m%C3%B8ller-lousdal/" target="_blank" rel="external"><i class="fab fa-linkedin"></i></a>
-                <a href="../assets/files/MadsLousdalCV.pdf" target="_blank" rel="external"><i class="fas fa-file-alt"></i></a>
-            </section>
-            <div><p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
-            <div><p>Copyright © 2021 Mads Lousdal</p></div>
-        </footer>
-        
-    </body>
+      </section>
+      <picture class="mockUp1">
+        <img
+          src="../assets/images/aalborg/mockups/mockup1.jpg"
+          alt="mock-up af projektet"
+        />
+      </picture>
+      <picture class="mockUp2">
+        <img
+          src="../assets/images/aalborg/mockups/mockup2.jpg"
+          alt="mock-up af projektet"
+        />
+      </picture>
+      <picture class="mockUp3">
+        <img
+          src="../assets/images/aalborg/mockups/mockup3.jpg"
+          alt="mock-up af projektet"
+        />
+      </picture>
+    </main>
+    <footer class="color-secondary center-flex">
+      <h3 class="semi-bold">Find mig online</h3>
+      <section class="center-flex">
+        <a href="https://github.com/MLousdal" target="_blank" rel="external"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/mads-m%C3%B8ller-lousdal/"
+          target="_blank"
+          rel="external"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="../assets/files/MadsLousdalCV.pdf"
+          target="_blank"
+          rel="external"
+          ><i class="fas fa-file-alt"></i
+        ></a>
+      </section>
+      <div>
+        <p>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+      </div>
+      <div><p>Copyright © 2021 Mads Lousdal</p></div>
+    </footer>
+  </body>
 </html>

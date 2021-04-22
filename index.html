@@ -1,77 +1,152 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website Base</title>
-        <meta name="description" content="WRITE A DESCRIPTION HERE!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/cssmall.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/all.css">
-        <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
-        <script src="assets/js/scripts.js" defer></script>
-        <script src="assets/js/vanilla-tilt.js" defer></script>
-    </head>
-    <body class="color-surface">
-        <nav>
-            <img src="assets/images/favicon-32x32.png" alt="logo" class="nav-logo">
-            <ul id="nav-links">
-                <li><a href="index.html" class="active">CASES</a></li>
-                <li><a href="om.html">OM</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-            <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <section class="hero color-primary center-flex">
-            <h4>Mit navn er Mads Lousdal, og jeg..</h4>
-            <h1 class="semi-bold">Gør design til virkelighed</h1>
-            <h4>Jeg studere multimedia design ved UCN,<br>og arbejder på at blive web udvikler og designer </h4>
-            <a href="om.html" class="btn">Mød mig</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Website Base</title>
+    <meta name="description" content="WRITE A DESCRIPTION HERE!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/cssmall.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/vanilla-tilt.js" defer></script>
+  </head>
+  <body class="color-surface">
+    <nav>
+      <img src="assets/images/favicon-32x32.png" alt="logo" class="nav-logo" />
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">CASES</a></li>
+        <li><a href="om.html">OM</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+      </ul>
+      <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section class="hero color-primary center-flex">
+      <h4>Mit navn er Mads Lousdal, og jeg..</h4>
+      <h1 class="semi-bold">Gør design til virkelighed</h1>
+      <h4>
+        Jeg studere multimedia design ved UCN,<br />og arbejder på at blive web
+        udvikler og designer
+      </h4>
+      <a href="om.html" class="btn">Mød mig</a>
+    </section>
+    <div class="wrapper-outer">
+      <main class="grid-main">
+        <a
+          class="case-item column-flex color-tertiary case1 shadow-neutral-light"
+          href="cases/svalegaardenMEST.html"
+          data-tilt
+          data-tilt-max="2"
+          data-tilt-speed="300"
+          data-tilt-perspective="500"
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.3"
+        >
+          <img
+            src="assets/images/svalegaarden mest/svalegaarden_logo_white.svg"
+            alt="Svalegaarden MEST logo"
+          />
+          <picture class="center-flex case-image">
+            <img
+              src="assets/images/svalegaarden mest/smartmockups_kmdxch2r.png"
+              alt="Mock-up og logo for Svalegaarden MEST"
+            />
+          </picture>
+        </a>
+        <a
+          class="case-item column-flex color-quaternary case2 shadow-neutral-light"
+          href="cases/loopstudios.html"
+          data-tilt
+          data-tilt-max="2"
+          data-tilt-speed="300"
+          data-tilt-perspective="500"
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.3"
+        >
+          <img
+            src="assets/images/loopstudios/logo.svg"
+            alt="loopstudios logo"
+          />
+          <picture class="center-flex case-image">
+            <source
+              media="(max-width:950px)"
+              srcset="assets/images/loopstudios/smartmockups_kmg5pnzt.png"
+            />
+            <img
+              src="assets/images/loopstudios/smartmockups_kmdz9alv.png"
+              alt="Mock-up og logo for Loopstudios"
+            />
+          </picture>
+        </a>
+        <a
+          class="case-item inline-flex color-secondary case3 shadow-neutral-light"
+          href="cases/aalborg.html"
+          data-tilt
+          data-tilt-max="2"
+          data-tilt-speed="300"
+          data-tilt-perspective="500"
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.3"
+        >
+          <img
+            src="assets/images/aalborg/logo/aalborg-seeklogo-white.svg"
+            alt="Aalborg kommune logo"
+            class="case-logo-half"
+          />
+          <picture class="center-flex case-image">
+            <img
+              src="assets/images/aalborg/mockups/aalborg-phones.png"
+              alt="Mock-up og log for aalborg kommune"
+            />
+          </picture>
+        </a>
+      </main>
+      <div class="wrapper-inner">
+        <section class="box color-primary center-flex">
+          <h2 class="bold">Kan du lide hvad du ser?</h2>
+          <h4>Så send mig en mail gennem min kontakt formular ✉️</h4>
+          <a href="kontakt.html" class="btn shadow-neutral-light-btn"
+            >Kontakt</a
+          >
         </section>
-        <div class="wrapper-outer">
-            <main class="grid-main">
-                <a class="case-item column-flex color-tertiary case1 shadow-neutral-light" href="cases/svalegaardenMEST.html" data-tilt data-tilt-max="2" data-tilt-speed="300" data-tilt-perspective="500" data-tilt-glare="true" data-tilt-max-glare="0.3">
-                    <img src="assets/images/svalegaarden mest/svalegaarden_logo_white.svg" alt="Svalegaarden MEST logo">
-                    <picture class="center-flex case-image">
-                        <img src="assets/images/svalegaarden mest/smartmockups_kmdxch2r.png" alt="Mock-up og logo for Svalegaarden MEST">
-                    </picture>
-                </a>
-                <a class="case-item column-flex color-quaternary case2 shadow-neutral-light" href="cases/loopstudios.html" data-tilt data-tilt-max="2" data-tilt-speed="300" data-tilt-perspective="500" data-tilt-glare="true" data-tilt-max-glare="0.3">
-                    <img src="assets/images/loopstudios/logo.svg" alt="loopstudios logo">
-                    <picture class="center-flex case-image">
-                        <source media="(max-width:950px)" srcset="assets/images/loopstudios/smartmockups_kmg5pnzt.png">
-                        <img src="assets/images/loopstudios/smartmockups_kmdz9alv.png" alt="Mock-up og logo for Loopstudios">
-                    </picture>
-                </a>
-                <a class="case-item inline-flex color-secondary case3 shadow-neutral-light" href="cases/aalborg.html" data-tilt data-tilt-max="2" data-tilt-speed="300" data-tilt-perspective="500" data-tilt-glare="true" data-tilt-max-glare="0.3">
-                    <img src="assets/images/aalborg/logo/aalborg-seeklogo-white.svg" alt="Aalborg kommune logo" class="case-logo-half">
-                    <picture class="center-flex case-image">
-                        <img src="assets/images/aalborg/mockups/aalborg-phones.png" alt="Mock-up og log for aalborg kommune">
-                    </picture>
-                </a>
-            </main>
-            <div class="wrapper-inner">
-                <section class="box color-primary center-flex">
-                    <h2 class="bold">Kan du lide hvad du ser?</h2>
-                    <h4>Så send mig en mail gennem min kontakt formular ✉️</h4>
-                    <a href="kontakt.html" class="btn shadow-neutral-light-btn">Kontakt</a>           
-                </section>
-            </div>
-        </div>
-        <footer class="color-primary center-flex"> 
-            <h3 class="semi-bold">Find mig online</h3>
-            <section class="center-flex">
-                <a href="https://github.com/MLousdal" target="_blank" rel="external"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/mads-m%C3%B8ller-lousdal/" target="_blank" rel="external"><i class="fab fa-linkedin"></i></a>
-                <a href="assets/files/MadsLousdalCV.pdf" target="_blank" rel="external"><i class="fas fa-file-alt"></i></a>
-            </section>
-            <div><p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div>
-            <div><p>Copyright © 2021 Mads Lousdal</p></div>
-        </footer>
-        
-    </body>
+      </div>
+    </div>
+    <footer class="color-primary center-flex">
+      <h3 class="semi-bold">Find mig online</h3>
+      <section class="center-flex">
+        <a href="https://github.com/MLousdal" target="_blank" rel="external"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/mads-m%C3%B8ller-lousdal/"
+          target="_blank"
+          rel="external"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="assets/files/MadsLousdalCV.pdf" target="_blank" rel="external"
+          ><i class="fas fa-file-alt"></i
+        ></a>
+      </section>
+      <div>
+        <p>
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+      </div>
+      <div><p>Copyright © 2021 Mads Lousdal</p></div>
+    </footer>
+  </body>
 </html>

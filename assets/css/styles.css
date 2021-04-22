@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 /*  Table of contents:
 
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 100%; /*16px*/
   line-height: 1.6;
@@ -63,13 +63,21 @@ h1 {
   font-size: 3.052rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+  font-size: 2.441rem;
+}
 
-h3 {font-size: 1.953rem;}
+h3 {
+  font-size: 1.953rem;
+}
 
-h4 {font-size: 1.563rem;}
+h4 {
+  font-size: 1.563rem;
+}
 
-h5 {font-size: 1.25rem;}
+h5 {
+  font-size: 1.25rem;
+}
 
 .small-text {
   font-size: 0.889rem;
@@ -101,9 +109,10 @@ a {
   display: inline-block;
   /* top: 2px; */
   left: 4px;
-  width: .9rem;
-  height: .9rem;
-  filter: invert(0%) sepia(11%) saturate(7481%) hue-rotate(175deg) brightness(110%) contrast(91%);
+  width: 0.9rem;
+  height: 0.9rem;
+  filter: invert(0%) sepia(11%) saturate(7481%) hue-rotate(175deg)
+    brightness(110%) contrast(91%);
 }
 
 /*  
@@ -115,7 +124,7 @@ a {
 /* ----- 3.1 Hero ----- */
 
 .hero {
-  text-align: center;       
+  text-align: center;
   height: 70vh;
   flex-direction: column;
   margin: var(--cssmall-spacing-xl) 0;
@@ -215,7 +224,9 @@ a {
   object-fit: contain;
 }
 
-.mockUp1, .mockUp2, .mockUp3 {
+.mockUp1,
+.mockUp2,
+.mockUp3 {
   grid-column: 2 / span 2;
 }
 
@@ -284,7 +295,7 @@ textarea {
 
 /* ----- 3.7 Picture ----- */
 
-picture img{
+picture img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
@@ -343,7 +354,7 @@ footer p {
   flex-direction: column-reverse;
 }
 
-.wrapper-outer{
+.wrapper-outer {
   max-width: 1200px;
   width: 80%;
   margin: var(--cssmall-spacing-xl) auto;
@@ -407,9 +418,13 @@ nav a {
   text-decoration: none;
   color: inherit;
   padding-bottom: 2px;
-  background: linear-gradient(var(--cssmall-color-text-on-surface),var(--cssmall-color-text-on-surface)) bottom;
+  background: linear-gradient(
+      var(--cssmall-color-text-on-surface),
+      var(--cssmall-color-text-on-surface)
+    )
+    bottom;
   background-size: 0% 2px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   transition: all 0.45s;
 }
 
@@ -483,22 +498,24 @@ input[type="submit"] {
     grid-template-columns: 1fr;
     gap: var(--cssmall-spacing-m);
   }
-  .mockUp1, .mockUp2, .mockUp3 {
+  .mockUp1,
+  .mockUp2,
+  .mockUp3 {
     grid-column: 1;
   }
-  
+
   .mockUp1 {
     grid-row: 2;
   }
-  
+
   .mockUp2 {
     grid-row: 3;
   }
-  
+
   .mockUp3 {
     grid-row: 4;
   }
-  
+
   .caseText {
     grid-row: 1;
     gap: var(--cssmall-spacing-s);
@@ -518,7 +535,7 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
   }
-  .case-item>img {
+  .case-item > img {
     width: 60%;
   }
   .case-image {
@@ -553,13 +570,13 @@ input[type="submit"] {
   #kontakt {
     width: 80%;
   }
-  #kontakt .inline-flex{
+  #kontakt .inline-flex {
     flex-direction: column;
   }
-  #kontakt .inline-flex>*{
+  #kontakt .inline-flex > * {
     width: 100%;
   }
-  textarea, 
+  textarea,
   input[type="text"],
   input[type="email"] {
     width: 100%;
