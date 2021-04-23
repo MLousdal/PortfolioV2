@@ -32,11 +32,8 @@
     --cssmall-color-surface: hsl(47, 100%, 98%);
 
      /* Text colors for theme */
-	--cssmall-color-text-on-primary: hsl(47, 100%, 5%);
-	--cssmall-color-text-on-secondary: hsl(47, 100%, 99%);
-	--cssmall-color-text-on-tertiary: hsl(47, 100%, 99%);
-	--cssmall-color-text-on-quaternary: hsl(47, 100%, 99%);
-	--cssmall-color-text-on-surface: hsl(47, 100%, 5%);
+	--cssmall-color-text-on-light: hsl(47, 100%, 5%);
+	--cssmall-color-text-on-dark: hsl(47, 100%, 99%);
 
     /* --- Neutral Colors --- */
 	--cssmall-color-neutral-white: hsl(0, 0%, 100%);
@@ -49,11 +46,6 @@
 	--cssmall-color-succes: hsl(87, 78%, 55%);
 	--cssmall-color-warning: hsl(47, 78%, 55%);
 	--cssmall-color-error: hsl(7, 78%, 55%);
-
-    /* Text colors for notifications */
-    --cssmall-color-text-on-succes: hsl(47, 100%, 5%);
-	--cssmall-color-text-on-warning: hsl(47, 100%, 5%);
-	--cssmall-color-text-on-error: hsl(47, 100%, 99%);
 
     /* ----- Shadows ----- */
     --cssmall-shadow-normal: 5px 5px 40px;
@@ -149,15 +141,15 @@
 /* Notification colors */
 .color-succes {
     background-color: var(--cssmall-color-succes);
-	color: var(--cssmall-color-text-on-succes);
+	color: var(--cssmall-color-text-on-light);
 }
 .color-warning {
     background-color: var(--cssmall-color-warning);
-	color: var(--cssmall-color-text-on-warning);
+	color: var(--cssmall-color-text-on-light);
 }
 .color-error {
     background-color: var(--cssmall-color-error);
-	color: var(--cssmall-color-text-on-error);
+	color: var(--cssmall-color-text-on-dark);
 }
 
 /* --- shadows --- */

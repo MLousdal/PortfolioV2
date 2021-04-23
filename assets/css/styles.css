@@ -419,8 +419,8 @@ nav a {
   color: inherit;
   padding-bottom: 2px;
   background: linear-gradient(
-      var(--cssmall-color-text-on-surface),
-      var(--cssmall-color-text-on-surface)
+      var(--cssmall-color-text-on-light),
+      var(--cssmall-color-text-on-light)
     )
     bottom;
   background-size: 0% 2px;
@@ -459,7 +459,7 @@ input[type="submit"] {
   padding: var(--cssmall-spacing-xs) var(--cssmall-spacing-s);
   margin: var(--cssmall-spacing-s);
   margin-top: 20px;
-  border: solid 4px var(--cssmall-color-text-on-primary);
+  border: solid 4px var(--cssmall-color-text-on-light);
   border-radius: var(--cssmall-border-radius);
   box-shadow: var(--cssmall-shadow-neutral-light-btn);
   transition: all 0.2s ease-in;
@@ -473,13 +473,14 @@ input[type="submit"] {
 }
 
 .borderWhite {
-  border: solid 4px var(--cssmall-color-text-on-secondary);
+  border: solid 4px var(--cssmall-color-text-on-dark);
   box-shadow: var(--cssmall-shadow-neutral-lighterx-btn);
+  color: var(--cssmall-color-text-on-dark);
 }
 
 .borderWhite:hover,
 .borderWhite:focus {
-  border: solid 4px var(--cssmall-color-text-on-secondary);
+  border: solid 4px var(--cssmall-color-text-on-dark);
   box-shadow: var(--cssmall-shadow-neutral-lighterx-pressed);
 }
 
