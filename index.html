@@ -1,152 +1,106 @@
 <!DOCTYPE html>
-<html lang="da">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Website Base</title>
-    <meta name="description" content="WRITE A DESCRIPTION HERE!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/cssmall.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/all.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/images/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <script src="assets/js/scripts.js" defer></script>
-    <script src="assets/js/vanilla-tilt.js" defer></script>
-  </head>
-  <body class="color-surface">
-    <nav>
-      <img src="assets/images/favicon-32x32.png" alt="logo" class="nav-logo" />
-      <ul id="nav-links">
-        <li><a href="index.html" class="active">CASES</a></li>
-        <li><a href="om.html">OM</a></li>
-        <li><a href="kontakt.html">KONTAKT</a></li>
-      </ul>
-      <a href="javascript:void(0);" onclick="burgerToggle()" class="nav-btn">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-    <section class="hero color-primary center-flex">
-      <h4>Mit navn er Mads Lousdal, og jeg..</h4>
-      <h1 class="semi-bold">Gør design til virkelighed</h1>
-      <h4>
-        Jeg studere multimedia design ved UCN,<br />og arbejder på at blive web
-        udvikler og designer
-      </h4>
-      <a href="om.html" class="btn">Mød mig</a>
-    </section>
-    <div class="wrapper-outer">
-      <main class="grid-main">
-        <a
-          class="case-item column-flex color-tertiary case1 shadow-neutral-light"
-          href="cases/svalegaardenMEST.html"
-          data-tilt
-          data-tilt-max="2"
-          data-tilt-speed="300"
-          data-tilt-perspective="500"
-          data-tilt-glare="true"
-          data-tilt-max-glare="0.3"
-        >
-          <img
-            src="assets/images/svalegaarden mest/svalegaarden_logo_white.svg"
-            alt="Svalegaarden MEST logo"
-          />
-          <picture class="center-flex case-image">
-            <img
-              src="assets/images/svalegaarden mest/smartmockups_kmdxch2r.png"
-              alt="Mock-up og logo for Svalegaarden MEST"
-            />
-          </picture>
-        </a>
-        <a
-          class="case-item column-flex color-quaternary case2 shadow-neutral-light"
-          href="cases/loopstudios.html"
-          data-tilt
-          data-tilt-max="2"
-          data-tilt-speed="300"
-          data-tilt-perspective="500"
-          data-tilt-glare="true"
-          data-tilt-max-glare="0.3"
-        >
-          <img
-            src="assets/images/loopstudios/logo.svg"
-            alt="loopstudios logo"
-          />
-          <picture class="center-flex case-image">
-            <source
-              media="(max-width:950px)"
-              srcset="assets/images/loopstudios/smartmockups_kmg5pnzt.png"
-            />
-            <img
-              src="assets/images/loopstudios/smartmockups_kmdz9alv.png"
-              alt="Mock-up og logo for Loopstudios"
-            />
-          </picture>
-        </a>
-        <a
-          class="case-item inline-flex color-secondary case3 shadow-neutral-light"
-          href="cases/aalborg.html"
-          data-tilt
-          data-tilt-max="2"
-          data-tilt-speed="300"
-          data-tilt-perspective="500"
-          data-tilt-glare="true"
-          data-tilt-max-glare="0.3"
-        >
-          <img
-            src="assets/images/aalborg/logo/aalborg-seeklogo-white.svg"
-            alt="Aalborg kommune logo"
-            class="case-logo-half"
-          />
-          <picture class="center-flex case-image">
-            <img
-              src="assets/images/aalborg/mockups/aalborg-phones.png"
-              alt="Mock-up og log for aalborg kommune"
-            />
-          </picture>
-        </a>
-      </main>
-      <div class="wrapper-inner">
-        <section class="box color-primary center-flex">
-          <h2 class="bold">Kan du lide hvad du ser?</h2>
-          <h4>Så send mig en mail gennem min kontakt formular ✉️</h4>
-          <a href="kontakt.html" class="btn shadow-neutral-light-btn"
-            >Kontakt</a
-          >
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website Base</title>
+        <meta name="description" content="WRITE A DESCRIPTION HERE!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+        <script src="assets/js/scripts.js" defer></script>
+    </head>
+    <body class="theme-light">
+        <nav>
+            <img src="assets/images/favicon-32x32.png" alt="logo" class="nav-logo">
+            <ul id="nav-links">
+                <li><a href="#" class="active underline">LINK A</a></li>
+                <li><a href="#" class="underline">LINK B</a></li>
+                <li><a href="#" class="underline">LINK C</a></li>
+                <li><a href="#" class="underline">LINK D</a></li>
+            </ul>
+            <button onclick="burgerToggle()" class="nav-btn" aria-label="menu"><img src="assets/images/icons/bars-solid.svg" alt=""></button>
+        </nav>
+        <section class="wrapper top">
+            <div class="center-flex wrap-flex gap-flex box">
+                <button onclick="toggleTheme()" aria-label="theme-toggle" class="theme-toggle">
+                    <img src="assets/images/icons/theme-toggle/icon-moon.svg" alt="Theme toggle" class="icon icon-black" id="toLight">
+                    <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" class="icon hide" id="toDark">
+                </button></div>
         </section>
-      </div>
-    </div>
-    <footer class="color-primary center-flex">
-      <h3 class="semi-bold">Find mig online</h3>
-      <section class="center-flex">
-        <a href="https://github.com/MLousdal" target="_blank" rel="external"
-          ><i class="fab fa-github-square"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/mads-m%C3%B8ller-lousdal/"
-          target="_blank"
-          rel="external"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="assets/files/MadsLousdalCV.pdf" target="_blank" rel="external"
-          ><i class="fas fa-file-alt"></i
-        ></a>
-      </section>
-      <div>
-        <p>
-          Icons made by
-          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-          <a href="https://www.flaticon.com/" title="Flaticon"
-            >www.flaticon.com</a
-          >
-        </p>
-      </div>
-      <div><p>Copyright © 2021 Mads Lousdal</p></div>
-    </footer>
-  </body>
+        <hr class="hr-text" data-content=""></hr>
+        <section class="wrapper">
+            <div class="box">
+                <h1>Heading 1</h1>
+                <h1 class="semi-bold">Heading 1</h1>
+                <h1 class="bold">Heading 1</h1>
+                <br />
+                <h2>Heading 2</h2>
+                <h2 class="semi-bold">Heading 2</h2>
+                <h2 class="bold">Heading 2</h2>
+                <br />
+                <h3>Heading 3</h3>
+                <h3 class="semi-bold">Heading 3</h3>
+                <h3 class="bold">Heading 3</h3>
+                <br />
+                <h4>Heading 4</h4>
+                <h4 class="semi-bold">Heading 4</h4>
+                <h4 class="bold">Heading 4</h4>
+                <br />
+                <h5>Heading 5</h5>
+                <h5 class="semi-bold">Heading 5</h5>
+                <h5 class="bold">Heading 5</h5>
+                <br />
+                <p>Spicy jalapeno bacon ipsum dolor amet <a href="#" class="external-link">test</a> t-bone chicken biltong fatback cupim, flank chuck buffalo beef ribs ham hock pancetta beef prosciutto corned beef. Buffalo pig flank short ribs shankle hamburger.</p>
+                <p class="semi-bold">Semi-bold</p>
+                <p class="bold">Bold</p>
+            </div>
+        </section>
+        <hr class="hr-text" data-content=""></hr>
+        <section class="wrapper">
+            <div class="color-neutral-white box center-flex column-flex">
+                <div class="slide-container">
+                    <input type="range" min="1" max="100" value="50" class="slider color-neutral-lighterx" id="myRange">
+                </div>
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox"/>
+                        <span class="switch_toggle"></span>
+                      </label>
+                </div>
+            </div>
+        </section>
+        <hr class="hr-text" data-content=""></hr>
+        <section class="wrapper">
+            <div class="kontakt-type-container box">
+                <input class="kontakt-type" type="radio" name="tools" id="type-1">
+                <label class="for-kontakt-type" for="type-1">
+                    <img src="assets/images/icons/fancy-radio/carbon_user.svg" class="icon icon-white" alt="">Medlem</label>
+                <input class="kontakt-type" type="radio" name="tools" id="type-2">
+                <label class="for-kontakt-type" for="type-2">
+                    <img src="assets/images/icons/fancy-radio/carbon_collaborate.svg" class="icon icon-white" alt="">Partner</label>
+                <input class="kontakt-type" type="radio" name="tools" id="type-3">
+                <label class="for-kontakt-type" for="type-3">
+                    <img src="assets/images/icons/fancy-radio/carbon_building.svg" class="icon icon-white" alt="">virksomhed</label>
+                <input class="kontakt-type" type="radio" name="tools" id="type-4">
+                <label class="for-kontakt-type" for="type-4">
+                    <img src="assets/images/icons/fancy-radio/carbon_group-presentation.svg" class="icon icon-white" alt="">Andet</label>
+            </div>
+        </section>
+        <hr class="hr-text" data-content=""></hr>
+        <section>
+            <section class="wrapper">
+                <div class="center-flex wrap-flex gap-flex box">
+                    <li class="center-flex">
+                        <label class="checkbox" for="x">
+                          <input type="checkbox" id="x">
+                          <span class="checkmark"></span>
+                          <span class="checkbox-text">Checkbox text here!</span>
+                        </label>
+                      </li>
+                </div>
+        </section>
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top" class="scale"><img src="assets/images/icons/toTopBtn/arrow-up-solid.svg" alt=""></button>
+    </body>
 </html>
