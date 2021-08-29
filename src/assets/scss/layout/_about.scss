@@ -1,18 +1,18 @@
 @use "../base/variables" as *;
 @use "../base/utility" as *;
 
-.cases {
+.about {
     @include sectionSpacing;
 }
 
-.case-grid {
+.about-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 8fr;
     align-items: stretch;
     background-color: var(--foreground-color);
 
-    .caseImage {
+    picture {
         width: 100%;
         position: relative;
         img {
@@ -25,40 +25,59 @@
             inset: 0;
             background-color: var(--color-overlay);
         }
-        &:hover::after, &:focus::after {
+        &:hover::after,
+        &:focus::after {
             background-color: var(--color-overlay-hover);
         }
     }
 
-    section {
+    article {
         display: flex;
         flex-flow: column nowrap;
         padding: $spacing-m;
         gap: $spacing-s;
     }
 
-    .info {
+    div {
         display: flex;
         justify-content: space-between;
         margin-top: auto;
-        width: 100%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .case-grid {
+    .about-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media screen and (max-width: 415px) {
-    .info {
-        flex-direction: column-reverse;
-        text-align: center;
+.toolbox {
+    background-color: var(--foreground-color);
+    text-align: center;
+    padding: $spacing-m;
+
+    .tools {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
         gap: $spacing-m;
-        
-        .links {
-            justify-content: center;
-        }
+    }
+    
+    .tool-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: $spacing-m;
+    }
+
+    .tool-sub-container {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .toolbox .tool-container {
+        flex-direction: column;
     }
 }
