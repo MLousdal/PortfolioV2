@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.theme-light {
+    --font-color: hsl(0, 0%, 0%);
+    --background-color: hsl(0, 0%, 95%);
+    --foreground-color: hsl(0, 0%, 85%);
+    --form-color: hsl(0, 0%, 80%);
+    --form-text: hsl(0, 0%, 37%);
+    --color-primary: hsl(212, 100%, 50%);
+    --shadow: hsl(0, 0%, 10%);
+    --filter: invert(39%) sepia(75%) saturate(6272%) hue-rotate(204deg) brightness(105%) contrast(106%);
+}

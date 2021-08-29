@@ -10,9 +10,20 @@
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
     <script src="assets/js/index.js" defer="true" type="module"></script>
 </head>
-<body>
+<body class="theme-dark">
     <header class="center-flex hero">
-        <h1 class="box">Hello World! ❤️</h1>
+        <button id="themeToggle" aria-label="theme-toggle" class="theme-toggle">
+            <img src="assets/images/icons/theme-toggle/icon-moon.svg" alt="Theme toggle" class="icon icon-black" id="toLight">
+            <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" class="icon hide" id="toDark">
+        </button>
+        <h1 class="wave">Hejsa</h1>
+        <p>Mit navn er <b class="color-primary">Mads Lousdal</b>, og jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux design</p>
+        <div class="links">
+            <a href="mailto:mads.lousdal@gmail.com" class="icon"><img src="assets/images/icons/social/mdi_email-outline.svg"></a>
+            <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon"><img src="assets/images/icons/social/mdi_linkedin.svg"></a>
+            <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
+        </div>
+        <button class="arrow" id="arrow"></button>
     </header>
 </body>
 </html>

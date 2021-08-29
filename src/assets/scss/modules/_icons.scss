@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.icon {
+    width: $spacing-m;
+    height: $spacing-m;
+    filter: var(--filter);
+}

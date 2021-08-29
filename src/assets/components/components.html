@@ -28,6 +28,24 @@
         <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" class="icon hide" id="toDark">
     </button>
 </div>
+<script>
+const body = document.querySelector("body");
+const themeToggle = document.querySelector("#themeToggle");
+
+themeToggle.addEventListener("click", toggleTheme)
+
+function toggleTheme() {
+  if (body.classList.contains("theme-light")) {
+    body.classList.replace("theme-light", "theme-dark");
+    toDark.classList.toggle("hide");
+    toLight.classList.toggle("hide");
+  } else {
+    body.classList.replace("theme-dark", "theme-light");
+    toLight.classList.toggle("hide");
+    toDark.classList.toggle("hide");
+  }
+}
+</script>
 
 <!-- Slider -->
 <div class="color-neutral-white box center-flex column-flex">

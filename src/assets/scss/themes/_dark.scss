@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.theme-dark {
+    --font-color: hsl(0, 0%, 100%);
+    --background-color: hsl(0, 0%, 5%);
+    --foreground-color: hsl(0, 0%, 15%);
+    --form-color: hsl(0, 0%, 20%);
+    --form-text: hsl(0, 0%, 37%);
+    --color-primary: hsl(49, 100%, 50%);
+    --shadow: hsl(0, 0%, 10%);
+    --filter: invert(78%) sepia(88%) saturate(4312%) hue-rotate(1deg) brightness(105%) contrast(102%);
+}
