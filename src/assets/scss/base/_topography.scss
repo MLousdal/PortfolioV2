@@ -5,7 +5,7 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 100%; /*16px*/
+    font-size: 112.5%; /*18px*/
     line-height: 1.75;
     color: var(--font-color);
     background-color: var(--background-color);
@@ -78,7 +78,7 @@ a {
 
     &::after {
         content: "";
-        background-image: url(../images/icons/foreign.svg);
+        background-image: url(../images/icons/mdi_open-in-new.svg);
         background-size: cover;
         position: relative;
         display: inline-block;

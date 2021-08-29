@@ -1,0 +1,53 @@
+@use "../base/variables" as *;
+
+.cases {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+    padding: $spacing-xl 0;
+}
+
+.case-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    background-color: var(--foreground-color);
+
+    .caseImage {
+        width: 100%;
+        position: relative;
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--color-overlay);
+        }
+        &:hover::after, &:focus::after {
+            background-color: var(--color-overlay-hover);
+        }
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: $spacing-m;
+        gap: $spacing-s;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .case-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

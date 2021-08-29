@@ -11,7 +11,7 @@
     <script src="assets/js/index.js" defer="true" type="module"></script>
 </head>
 <body class="theme-dark">
-    <header class="center-flex hero">
+    <header class="center-flex hero wrapper">
         <button id="themeToggle" aria-label="theme-toggle" class="theme-toggle">
             <img src="assets/images/icons/theme-toggle/icon-moon.svg" alt="Theme toggle" class="icon icon-black" id="toLight">
             <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" class="icon hide" id="toDark">
@@ -19,11 +19,83 @@
         <h1 class="wave">Hejsa</h1>
         <p>Mit navn er <b class="color-primary">Mads Lousdal</b>, og jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux design</p>
         <div class="links">
-            <a href="mailto:mads.lousdal@gmail.com" class="icon"><img src="assets/images/icons/social/mdi_email-outline.svg"></a>
-            <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon"><img src="assets/images/icons/social/mdi_linkedin.svg"></a>
+            <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_email-outline.svg"></a>
+            <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_linkedin.svg"></a>
             <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
         </div>
         <button class="arrow" id="arrow"></button>
     </header>
+    <section class="wrapper cases">
+        <article class="case-grid">
+            <a href="#" target="_blank" class="caseImage">
+                <picture>
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=webp" type="image/webp">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=png" type="image/png">
+                    <img src="assets/images/cases/case_pictures_FDUU.png?width=400" alt="">
+                </picture>
+            </a>
+                <section>
+                <h3>2. semester eksamen: FDUU</h3>
+                <p>Min gruppes eksamensprojekt på 2. semester af multimediedesign uddannelsen. 
+                    Formålet med siden er at give foreningen en måde at tiltrække medlemmer, og samarbejdspartnere. Samt at kunne oprette begivenhedder gennem wordpress som vi anvendte som headless CMS. Der er også en filtreringsfunktion på kontakt siden som tilpasser den vejledende tekst baseret på kategorien.</p>
+                <div>
+                    <div class="links">
+                        <!-- TODO: update links + make them accessible -->
+                        <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg"></a>
+                        <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
+                    </div>
+                    <span>HTML + CSS + JS + API</span>
+                </div>
+            </section>
+        </article>
+        <article class="case-grid">
+            <a href="#" target="_blank" class="caseImage">
+                <picture>
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=webp" type="image/webp">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=png" type="image/png">
+                    <img src="assets/images/cases/case_pictures_shortly.png?width=400" alt="">
+                </picture>
+            </a>
+            <section>
+                <h3>Shortly, URL forkorter, landing page</h3>
+                <p>Landing page for Shortly, med integreret forkortning af URL’er gennem “shrtcode” API’en.
+                    URL forkortningsfunktionen bliver form valideret for at sikre at API kaldet retunere et gyldigt link. Ud fra dette link bliver der genereret et kort hvor brugeren kan kopiere linket direkte. 
+                    Bemærk at designet er fra frontendmentor udfordringen, alt kode er dog mit.
+                    </p>
+                <div>
+                    <div class="links">
+                        <!-- TODO: update links + make them accessible -->
+                        <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg"></a>
+                        <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
+                    </div>
+                    <span>HTML + CSS + JS + API</span>
+                </div>
+            </section>
+        </article>
+        <article class="case-grid">
+            <a href="#" target="_blank" class="caseImage">
+                <picture>
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_todo.png?as=webp" type="image/webp">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_todo.png?as=png" type="image/png">
+                    <img src="assets/images/cases/case_pictures_todo.png?width=400" alt="">
+                </picture>
+            </a>
+            <section>
+                <h3>Todolist</h3>
+                <p>Den klassiske todo app med et par twists! 
+                    Både lyst og mørkt tema som kan skiftes mellem. Sortering af todos mellem alle, aktive og gennemførte. Plus en knap som fjerner alle gennemførte i 1 klik!
+                    Bemærk at designet er fra frontendmentor udfordringen, alt kode er dog mit.
+                    </p>
+                <div>
+                    <div class="links">
+                        <!-- TODO: update links + make them accessible -->
+                        <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg"></a>
+                        <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
+                    </div>
+                    <span>HTML + CSS + JS</span>
+                </div>
+            </section>
+        </article>
+    </section>
 </body>
 </html>

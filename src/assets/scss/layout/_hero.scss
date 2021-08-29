@@ -6,7 +6,6 @@
     justify-content: center;
     flex-flow: column nowrap;
     gap: $spacing-l;
-    background-color: var(--foreground-color);
 
     p {
         font-size: 1.953rem;
@@ -16,9 +15,4 @@
             color: var(--color-primary);
         }
     }
-}
-
-.links {
-    display: flex;
-    gap: $spacing-m;
 }
