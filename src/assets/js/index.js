@@ -34,7 +34,7 @@ function checkPosition() {
   animateMe.forEach(e => {
     let positionFromTop = e.getBoundingClientRect().top;
 
-    if (positionFromTop - windowHeight <= 0) {
+    if (positionFromTop - windowHeight <= 10) {
       e.classList.add('animate__animated', 'animate__fadeInUp');
     };
   });

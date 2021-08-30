@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -20,5 +20,17 @@
         position: absolute;
         top: $spacing-m;
         right: $spacing-m;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        gap: $spacing-m;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        gap: $spacing-s;
     }
 }
