@@ -10,29 +10,30 @@
     form {
         background-color: var(--foreground-color);
         padding: $spacing-m;
-        // width: 100%;
     }
-
+    
     .contact-text {
         align-self: center;
     }
-
+    
     form {
         padding: $spacing-m;
-
+        
         fieldset {
             display: flex;
             flex-direction: column;
         }
-
+        
         input[type="text"],
         input[type="email"],
         textarea {
             padding: $spacing-xs;
             margin-bottom: $spacing-m;
+            font-family: "Poppins", sans-serif;
         }
-
+        
         button[type="submit"] {
+            font-family: "Poppins", sans-serif;
             padding: $spacing-xs $spacing-s;
             background-color: var(--font-color);
             color: var(--background-color);
