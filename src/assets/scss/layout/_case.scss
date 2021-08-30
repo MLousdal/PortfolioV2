@@ -7,11 +7,11 @@
 
 .case-grid {
     width: 100%;
+    min-height: 475px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
-    background-color: var(--foreground-color);
-
+    
     .caseImage {
         width: 100%;
         position: relative;
@@ -29,12 +29,12 @@
             background-color: var(--color-overlay-hover);
         }
     }
-
+    
     section {
         display: flex;
         flex-flow: column nowrap;
         padding: $spacing-m;
-        gap: $spacing-s;
+        background-color: var(--foreground-color);
     }
 
     .info {
