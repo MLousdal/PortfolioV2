@@ -1,0 +1,57 @@
+@use "../base/variables" as *;
+@use "../base/utility" as *;
+
+.contact {
+    padding: $spacing-xl 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .contact-text,
+    form {
+        background-color: var(--foreground-color);
+        padding: $spacing-m;
+        // width: 100%;
+    }
+
+    .contact-text {
+        align-self: center;
+    }
+
+    form {
+        padding: $spacing-m;
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: $spacing-xs;
+            margin-bottom: $spacing-m;
+        }
+
+        button[type="submit"] {
+            padding: $spacing-xs $spacing-s;
+            background-color: var(--font-color);
+            color: var(--background-color);
+            border: none;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                background-color: var(--color-primary);
+            }
+            &::after {
+                content: "📨";
+                padding-left: 1ch;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

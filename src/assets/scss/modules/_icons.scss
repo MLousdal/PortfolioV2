@@ -5,7 +5,8 @@
     height: $spacing-m;
     filter: var(--tool);
 
-    &:hover {
+    &:hover, &:focus {
+        outline: initial;
         filter: var(--filter);
     }
 

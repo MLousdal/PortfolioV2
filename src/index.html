@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Website Base</title>
-    <meta name="description" content="WRITE A DESCRIPTION HERE!">
+    <title>Mads Lousdal | Frontend udvikler</title>
+    <meta name="description" content="Mads Lousdal er en passioneret frontend udvikler, med en god forståelse for ui/ux design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/scss/main.scss">
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
@@ -12,9 +12,9 @@
 </head>
 <body class="theme-dark">
     <header class="center-flex hero wrapper">
-        <button id="themeToggle" aria-label="theme-toggle" class="theme-toggle">
-            <img src="assets/images/icons/theme-toggle/icon-moon.svg" alt="Theme toggle" class="icon icon-black" id="toLight">
-            <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" class="icon hide" id="toDark">
+        <button id="themeToggle" aria-label="theme-toggle" class="theme-toggle icon">
+            <img src="assets/images/icons/theme-toggle/icon-moon.svg" alt="Theme toggle" class="hide"  id="toLight">
+            <img src="assets/images/icons/theme-toggle/icon-sun.svg" alt="Theme toggle" id="toDark">
         </button>
         <h1 class="wave">Hejsa</h1>
         <p>Mit navn er <b class="color-primary">Mads Lousdal</b>, og jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux design</p>
@@ -30,8 +30,8 @@
             <a href="#" target="_blank" class="caseImage">
                 <picture>
                     <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=webp" type="image/webp">
-                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=png" type="image/png">
-                    <img src="assets/images/cases/case_pictures_FDUU.png?width=400" alt="">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=png&width=800" type="image/png">
+                    <img src="assets/images/cases/case_pictures_FDUU.png" alt="">
                 </picture>
             </a>
                 <section>
@@ -52,8 +52,8 @@
             <a href="#" target="_blank" class="caseImage">
                 <picture>
                     <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=webp" type="image/webp">
-                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=png" type="image/png">
-                    <img src="assets/images/cases/case_pictures_shortly.png?width=400" alt="">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=png&width=800" type="image/png">
+                    <img src="assets/images/cases/case_pictures_shortly.png" alt="">
                 </picture>
             </a>
             <section>
@@ -76,8 +76,8 @@
             <a href="#" target="_blank" class="caseImage">
                 <picture>
                     <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_todo.png?as=webp" type="image/webp">
-                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_todo.png?as=png" type="image/png">
-                    <img src="assets/images/cases/case_pictures_todo.png?width=400" alt="">
+                    <source media="(min-width=800px)" srcset="assets/images/cases/case_pictures_todo.png?as=png&width=800" type="image/png">
+                    <img src="assets/images/cases/case_pictures_todo.png" alt="">
                 </picture>
             </a>
             <section>
@@ -141,6 +141,29 @@
                 </div>
             </div>
         </section>
+    </section>
+    <section class="wrapper contact">
+        <section class="contact-text">
+            <h2>Ik’ vær genert</h2>
+            <p>Jeg elsker at møde nye mennesker, især hvor der er mulighed for at gro som menneske. Er det dig så send mig en besked!</p>
+            <div class="links">
+                <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_email-outline.svg"></a>
+                <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_linkedin.svg"></a>
+                <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg"></a>
+            </div>
+        </section>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqlozdw" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Fulde navn</label>
+              <input type="text" name="name" id="full-name" placeholder="for- og efternavn" required="">
+              <label for="email-address">Email Addresse</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="message">Besked</label>
+              <textarea rows="5" name="message" id="message" placeholder="Har du et spørgsmål, eller måske vil du bare sige hej? Skriv det her, og jeg vil vende tilbage til dig så hurtigt som muligt!" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit">Send Besked</button>
+        </form>
     </section>
 </body>
 </html>
