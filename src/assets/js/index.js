@@ -26,9 +26,9 @@ themeToggle.addEventListener("click", () => {
 import "animate.css";
 
 const animateMe = document.querySelectorAll(".animateMe");
-const windowHeight = window.innerHeight;
 
 function checkPosition() {
+  const windowHeight = window.innerHeight;
   animateMe.forEach(e => {
     let positionFromTop = e.getBoundingClientRect().top;
 
