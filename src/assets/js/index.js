@@ -28,14 +28,32 @@ import "animate.css";
 const animateMe = document.querySelectorAll(".animateMe");
 const windowHeight = window.innerHeight;
 
-body.onscroll = checkPosition;
-
 function checkPosition() {
   animateMe.forEach(e => {
     let positionFromTop = e.getBoundingClientRect().top;
 
-    if (positionFromTop - windowHeight <= 10) {
+    if (positionFromTop - windowHeight <= 0) {
       e.classList.add('animate__animated', 'animate__fadeInUp');
     };
   });
 };
+
+window.addEventListener('scroll', checkPosition);
+
+// Scroll to top button
+toTopBtn = document.querySelector("#toTopBtn");
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toTopBtn.style.display = "block";
+  } else {
+    toTopBtn.style.display = "none";
+  }
+}
+
+toTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;  
+  document.documentElement.scrollTop = 0;
+})
+
+window.addEventListener('scroll', scrollFunction);

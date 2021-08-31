@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+@use "../base/utility" as *;
+
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: $spacing-m;
+    right: $spacing-m;
+    z-index: 5;
+    border: none;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    padding: $spacing-xs;
+    border-radius: $border-radius;
+
+    & img {
+        display: block;
+        height: $spacing-s;
+        width: $spacing-s;
+        filter: var(--invert);
+    }
+}
