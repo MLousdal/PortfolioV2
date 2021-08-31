@@ -9,7 +9,7 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --no-scope-hoist"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
