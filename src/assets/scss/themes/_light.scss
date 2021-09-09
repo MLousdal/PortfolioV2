@@ -9,7 +9,7 @@
     --color-primary: hsl(212, 100%, 50%);
     --color-overlay: hsla(212, 100%, 50%, 0.15);
     --shadow: hsl(0, 0%, 10%);
-    --filter: invert(39%) sepia(75%) saturate(6272%) hue-rotate(204deg) brightness(105%) contrast(106%);
+    --filter: brightness(0) saturate(100%) brightness(0) saturate(100%)invert(26%) sepia(83%) saturate(2571%) hue-rotate(203deg) brightness(105%) contrast(104%);
     --tool: invert(0%) sepia(2%) saturate(6%) hue-rotate(63deg) brightness(92%) contrast(100%);
     --invert: invert(100%);
 }

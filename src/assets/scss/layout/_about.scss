@@ -60,27 +60,25 @@
     padding: $spacing-m;
 
     .tools {
-        display: flex;
-        justify-content: center;
-        flex-flow: column nowrap;
-        gap: $spacing-m;
-    }
-
-    .tool-container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .tool-sub-container {
-        display: flex;
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: $spacing-s;
+        align-content: center;
     }
 }
 
 @media screen and (max-width: 725px) {
-    .toolbox .tool-container {
-        gap: $spacing-m;
-        flex-direction: column;
+    .toolbox .tools {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .toolbox {
+        padding: $spacing-s;
+
+        .tools {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
