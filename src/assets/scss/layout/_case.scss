@@ -2,7 +2,9 @@
 @use "../base/utility" as *;
 
 .cases {
-    @include sectionSpacing;
+    display: flex;
+    flex-direction: column;
+    gap: $unit-6;
 }
 
 .case-grid {
@@ -37,8 +39,9 @@
     section {
         display: flex;
         flex-flow: column nowrap;
-        padding: $spacing-m;
+        padding: $unit-2;
         background-color: var(--foreground-color);
+        gap: $unit-15;
     }
 
     .info {
@@ -55,11 +58,15 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 450px) {
+
+    .case-grid section {
+        padding: $unit-1;
+    }
     .info {
         flex-direction: column-reverse;
         text-align: center;
-        gap: $spacing-m;
+        gap: $unit-2;
 
         .links {
             justify-content: center;

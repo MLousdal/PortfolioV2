@@ -11,7 +11,7 @@
     <script src="assets/js/index.js" defer="true" type="module"></script>
 </head>
 <body class="theme-dark">
-    <header class="center-flex hero wrapper">
+    <header class="hero wrapper">
         <div class="topRight">
             <input type="checkbox" id="themeToggle" aria-label="theme-toggle" class="toggle">
         </div>
@@ -142,17 +142,19 @@
         </section>
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqlozdw" method="post">
             <fieldset id="fs-frm-inputs">
-              <label for="full-name">Fulde navn</label>
-              <input type="text" name="name" id="full-name" placeholder="for- og efternavn" required="">
-              <label for="email-address">Email adresse</label>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-              <label for="message">Besked</label>
-              <textarea rows="5" name="message" id="message" placeholder="Har du et spørgsmål, eller måske vil du bare sige hej? Skriv det her, og jeg vil vende tilbage til dig så hurtigt som muligt!" required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <label for="full-name">Fulde navn
+                <input type="text" name="name" id="full-name" placeholder="for- og efternavn" required="">
+              </label>
+              <label for="email-address">Email adresse
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              </label>
+              <label for="message">Besked
+                <textarea rows="5" name="message" id="message" placeholder="Har du et spørgsmål, eller måske vil du bare sige hej? Skriv det her, og jeg vil vende tilbage til dig så hurtigt som muligt!" required=""></textarea>
+              </label>
             </fieldset>
-            <button type="submit">Send Besked</button>
+            <button type="submit" class="btn-primary">Send Besked</button>
         </form>
     </section>
-    <button id="toTopBtn" title="Scroll to top" class="scale"><img src="assets/images/icons/toTopBtn/arrow-up-solid.svg" alt=""></button>
+    <input type="image" alt="" src="arrow-up-solid.svg" id="toTopBtn" title="Scroll to top" class="scale"></input>
 </body>
 </html>

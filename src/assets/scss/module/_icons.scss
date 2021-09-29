@@ -1,12 +1,12 @@
 @use "../base/variables" as *;
 
 .icon {
-    width: $spacing-m;
-    height: $spacing-m;
-    filter: var(--tool);
+    width: $unit-2;
+    height: $unit-2;
+    filter: var(--filter-font-color);
 
-    &:hover, &:focus {
-        filter: var(--filter);
+    &:hover {
+        filter: var(--filter-primary);
     }
 
     img {
@@ -15,18 +15,19 @@
     }
 }
 
+
 .tool {
     display: flex;
     flex-direction: column;
-    gap: $spacing-s;
+    gap: $unit-1;
     justify-content: center;
     align-items: center;
     flex: 1 1 0px;
-    filter: var(--tool);
+    filter: var(--filter-font-color);
 
     img {
         width: 30%;
-        min-width: $spacing-m;
+        min-width: $unit-2;
     }
 
     span {

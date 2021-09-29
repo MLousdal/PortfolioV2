@@ -4,8 +4,9 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column nowrap;
-    gap: $spacing-l;
+    gap: $unit-4;
 
     p {
         font-size: 1.953rem;
@@ -18,19 +19,19 @@
 
     .topRight {
         position: absolute;
-        top: $spacing-m;
-        right: $spacing-m;
+        top: $unit-2;
+        right: $unit-2;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .hero {
-        gap: $spacing-m;
+        gap: $unit-2;
     }
 }
 
 @media screen and (max-width: 700px) {
     .hero {
-        gap: $spacing-s;
+        gap: $unit-1;
     }
 }

@@ -2,7 +2,9 @@
 @use "../base/utility" as *;
 
 .about {
-    @include sectionSpacing;
+    display: flex;
+    flex-direction: column;
+    gap: $unit-6;
 }
 
 .about-grid {
@@ -37,8 +39,8 @@
     article {
         display: flex;
         flex-flow: column nowrap;
-        padding: $spacing-m;
-        gap: $spacing-s;
+        padding: $unit-2;
+        gap: $unit-15;
     }
 
     div {
@@ -54,15 +56,26 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .about-grid {
+        & article {
+            padding: $unit-1;
+        }
+    }
+}
+
 .toolbox {
     background-color: var(--foreground-color);
     text-align: center;
-    padding: $spacing-m;
+    padding: $unit-2;
+    display: flex;
+    flex-direction: column;
+    gap: $unit-15;
 
     .tools {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: $spacing-s;
+        gap: $unit-1;
         align-content: center;
     }
 }
@@ -75,7 +88,7 @@
 
 @media screen and (max-width: 550px) {
     .toolbox {
-        padding: $spacing-s;
+        padding: $unit-1;
 
         .tools {
             grid-template-columns: repeat(3, 1fr);

@@ -2,52 +2,42 @@
 @use "../base/utility" as *;
 
 .contact {
-    padding: $spacing-xl 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     .contact-text,
     form {
         background-color: var(--foreground-color);
-        padding: $spacing-m;
+        padding: $unit-2;
+        display: flex;
+        flex-direction: column;
+        gap: $unit-15;
     }
-    
+
     .contact-text {
         align-self: center;
     }
-    
+
     form {
-        padding: $spacing-m;
+        padding: $unit-2;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        
+
         fieldset {
             display: flex;
             flex-direction: column;
+            gap: $unit-15;
+
+            & label {
+                display: flex;
+                flex-direction: column;
+            }
         }
-        
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            padding: $spacing-xs;
-            margin-bottom: $spacing-m;
-            font-family: "Poppins", sans-serif;
-        }
-        
+
         button[type="submit"] {
             align-self: flex-end;
-            width: fit-content;
-            font-family: "Poppins", sans-serif;
-            padding: $spacing-xs $spacing-s;
-            background-color: var(--font-color);
-            color: var(--background-color);
-            border: none;
-            cursor: pointer;
-            &:hover,
-            &:focus {
-                background-color: var(--color-primary);
-            }
+
             &::after {
                 content: "📨";
                 padding-left: 1ch;
@@ -59,5 +49,16 @@
 @media screen and (max-width: 1000px) {
     .contact {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .contact {
+
+        & .contact-text,
+        & form {
+            padding: $unit-1;
+        }
     }
 }

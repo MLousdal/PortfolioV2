@@ -4,19 +4,14 @@
 #toTopBtn {
     display: none;
     position: fixed;
-    bottom: $spacing-m;
-    right: $spacing-m;
+    width: $unit-2;
+    height: $unit-2;
+    bottom: $unit-2;
+    right: $unit-2;
     z-index: 5;
     border: none;
     background-color: var(--color-primary);
     cursor: pointer;
-    padding: $spacing-xs;
+    padding: $unit-05;
     border-radius: $border-radius;
-
-    & img {
-        display: block;
-        height: $spacing-s;
-        width: $spacing-s;
-        filter: var(--invert);
-    }
 }
