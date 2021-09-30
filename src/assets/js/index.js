@@ -57,7 +57,7 @@ function checkPosition() {
 window.addEventListener('scroll', checkPosition);
 
 // Scroll to top button
-toTopBtn = document.querySelector("#toTopBtn");
+const toTopBtn = document.querySelector("#toTopBtn");
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
