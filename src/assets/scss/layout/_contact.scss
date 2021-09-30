@@ -37,11 +37,6 @@
 
         button[type="submit"] {
             align-self: flex-end;
-
-            &::after {
-                content: "📨";
-                padding-left: 1ch;
-            }
         }
     }
 }

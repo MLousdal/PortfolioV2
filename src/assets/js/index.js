@@ -1,5 +1,3 @@
-// import * as classes from '../scss/main.scss'; // For css in js
-
 // Scroll arrow
 
 const arrow = document.querySelector("#arrow");
@@ -20,6 +18,24 @@ themeToggle.addEventListener("click", () => {
     body.classList.replace("theme-dark", "theme-light");
   }
 });
+
+// check system preferred color scheme
+window.onload = () => {
+  const userPrefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const userPrefersLight =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: light)").matches;
+
+  if (userPrefersDark) {
+    body.classList.add("theme-dark");
+  }
+
+  if (userPrefersLight) {
+    body.classList.add("theme-light");
+  }
+};
 
 
 // Animations

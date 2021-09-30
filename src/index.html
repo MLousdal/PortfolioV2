@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
     <script src="assets/js/index.js" defer="true" type="module"></script>
 </head>
-<body class="theme-dark">
+<body class="">
     <header class="hero wrapper">
         <div class="topRight">
             <input type="checkbox" id="themeToggle" aria-label="theme-toggle" class="toggle">
@@ -18,15 +18,57 @@
         <h1 class="wave">Hejsa</h1>
         <p>Mit navn er <b class="color-primary">Mads Lousdal</b>, og jeg er en passioneret frontend udvikler, med en god forståelse for ui/ux design</p>
         <div class="links">
-            <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_email-outline.svg" alt="email"></a>
-            <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_linkedin.svg" alt="linkedin"></a>
-            <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg" alt="github"></a>
+            <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_email-outline.svg" alt="email"></a>
+            <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/MLousdal" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="github"></a>
         </div>
-        <button class="arrow" id="arrow" title="scroll to projects"></button>
+        <input type="image" src="mdi_arrow-down.svg" alt="down arrow" class="arrow" id="arrow" title="scroll to projects"></input>
     </header>
     <main class="wrapper cases" id="cases">
         <article class="case-grid animateMe">
-            <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/MMD2/" target="_blank" class="caseImage">
+            <a href="https://web-template-eight.vercel.app/showcase.html" target="_blank" rel="noopener" class="caseImage">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_showcase.png?as=webp&width=1200&quality=75" type="image/webp">
+                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_showcase.png?as=png&width=1200" type="image/png">
+                    <source srcset="assets/images/cases/case_pictures_showcase.png?as=webp&width=1200" type="image/webp">
+                    <img src="assets/images/cases/case_pictures_showcase.png?width=1200" alt="mockup af projektet">
+                </picture>
+            </a>
+                <section>
+                <h3>webTemplate</h3>
+                <p>webTemplate er en boilerplate til at starte nye projekter. webTemplate er sat op med Parcel, og SASS, i en organiseret mappe struktur, baseret på <a class="external-link" target="_blank" rel="noopener" href="http://smacss.com/">SMACSS</a>. Derudover er de mest almindelige HTML elementer for stylede, så man ikke skal bruge tid på at opfinde den dybe tallerken.<br />webTemplate anvender Autoprefixer, for at sikre den bedste kryds kompatibilitet mellem browsere som muligt.</p>
+                <div class="info">
+                    <div class="links">
+                        <a href="https://web-template-eight.vercel.app/showcase.html" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
+                        <a href="https://github.com/MLousdal/webTemplate" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
+                    </div>
+                    <span>HTML, SCSS, JS</span>
+                </div>
+            </section>
+        </article>
+        <article class="case-grid animateMe">
+            <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/MMD2/" target="_blank" rel="noopener" class="caseImage">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_toolbox.jpg?as=webp&width=1200&quality=75" type="image/webp">
+                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_toolbox.jpg?as=png&width=1200" type="image/png">
+                    <source srcset="assets/images/cases/case_pictures_toolbox.jpg?as=webp&width=1200" type="image/webp">
+                    <img src="assets/images/cases/case_pictures_toolbox.jpg?width=1200" alt="mockup af projektet">
+                </picture>
+            </a>
+                <section>
+                <h3>Toolbox</h3>
+                <p>Min gruppes valgfags eksamensprojekt på 3. semester af multimedie design uddannelsen.<br />Ideen med Toolbox er at have en central kilde til at finde online værktøjer, som anvendes til at lave hjemmesider, så man slipper for det rod af bogmærker man let laver. Vi byggede vores egen API med Nodejs, og Express, for at kommunikere med databasen. Læs mere på Github...</p>
+                <div class="info">
+                    <div class="links">
+                        <a href="https://toolbox-alpha.vercel.app/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
+                        <a href="https://github.com/MLousdal/Toolbox" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
+                    </div>
+                    <span>HTML, SCSS, JS, API, Nodejs</span>
+                </div>
+            </section>
+        </article>
+        <article class="case-grid animateMe">
+            <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/MMD2/" target="_blank" rel="noopener" class="caseImage">
                 <picture>
                     <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=webp&width=1200&quality=75" type="image/webp">
                     <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_FDUU.png?as=png&width=1200" type="image/png">
@@ -35,44 +77,19 @@
                 </picture>
             </a>
                 <section>
-                <h3>2. semester eksamen: FDUU</h3>
-                <p>Min gruppes eksamensprojekt på 2. semester af multimediedesign uddannelsen. 
-                    Formålet med siden er at give foreningen en måde at tiltrække medlemmer, og samarbejdspartnere. Samt at kunne oprette begivenheder gennem wordpress som vi anvendte som headless CMS. Der er også en filtrerings funktion på kontakt siden som tilpasser den vejledende tekst baseret på kategorien.</p>
+                <h3>FDUU</h3>
+                <p>Min gruppes eksamensprojekt på 2. semester af multimedie design uddannelsen.<br />Formålet med siden er at give foreningen en måde at tiltrække medlemmer, og samarbejdspartnere. Samt at kunne oprette begivenheder gennem wordpress som vi anvendte som headless CMS. Der er også en filtrerings funktion på kontakt siden som tilpasser den vejledende tekst baseret på kategorien.</p>
                 <div class="info">
                     <div class="links">
-                        <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/MMD2/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
-                        <a href="https://gitfront.io/r/MLousdal/cce5738fcd9bf10ebe24b09f72220129bf303703/MMD2/" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
+                        <a href="https://mmd.ucn.dk/class/mmda0920/1086118/Semester%202/MMD2/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
+                        <a href="https://gitfront.io/r/MLousdal/cce5738fcd9bf10ebe24b09f72220129bf303703/MMD2/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
                     </div>
-                    <span>HTML + CSS + JS + API</span>
+                    <span>HTML, CSS, JS, API</span>
                 </div>
             </section>
         </article>
         <article class="case-grid animateMe">
-            <a href="https://url-shortening-api-master-rust.vercel.app/" target="_blank" class="caseImage">
-                <picture>
-                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=webp&width=1200&quality=75" type="image/webp">
-                    <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_shortly.png?as=png&width=1200" type="image/png">
-                    <source srcset="assets/images/cases/case_pictures_shortly.png?as=webp&width=1200" type="image/webp">
-                    <img src="assets/images/cases/case_pictures_shortly.png?width=1200" alt="mockup af projektet">
-                </picture>
-            </a>
-            <section>
-                <h3>URL forkorter, landing page</h3>
-                <p>Landing page for Shortly, med integreret forkortning af URL’er gennem “shrtcode” API’en.
-                    URL forkortnings funktionen bliver form valideret for at sikre at API kaldet returnere et gyldigt link. Ud fra dette link bliver der genereret et kort hvor brugeren kan kopiere linket direkte. 
-                    Bemærk at designet er fra frontendmentor udfordringen, alt kode er dog mit.
-                    </p>
-                <div class="info">
-                    <div class="links">
-                        <a href="https://url-shortening-api-master-rust.vercel.app/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
-                        <a href="https://github.com/MLousdal/url-shortening-api" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
-                    </div>
-                    <span>HTML + CSS + JS + API</span>
-                </div>
-            </section>
-        </article>
-        <article class="case-grid animateMe">
-            <a href="https://todo-app-main-lime.vercel.app/" target="_blank" class="caseImage">
+            <a href="https://todo-app-main-lime.vercel.app/" target="_blank" rel="noopener" class="caseImage">
                 <picture>
                     <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_todo.png?as=webp&width=1200&quality=75" type="image/webp">
                     <source media="(max-width: 800px)" srcset="assets/images/cases/case_pictures_todo.png?as=png&width=1200" type="image/png">
@@ -84,14 +101,14 @@
                 <h3>Todo-list</h3>
                 <p>Den klassiske todo app med et par twists! 
                     Både lyst og mørkt tema som kan skiftes mellem. Sortering af todos mellem alle, aktive og gennemførte. Plus en knap som fjerner alle gennemførte i 1 klik!
-                    Bemærk at designet er fra frontendmentor udfordringen, alt kode er dog mit.
+                    Bemærk at designet er fra frontendmentor udfordringen.
                     </p>
                 <div class="info">
                     <div class="links">
-                        <a href="https://todo-app-main-lime.vercel.app/" class="icon" target="_blank"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
-                        <a href="https://github.com/MLousdal/todo-app" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
+                        <a href="https://todo-app-main-lime.vercel.app/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/mdi_open-in-new.svg" alt="åben projektet i ny fane"></a>
+                        <a href="https://github.com/MLousdal/todo-app" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="se koden på github"></a>
                     </div>
-                    <span>HTML + CSS + JS</span>
+                    <span>HTML, CSS, JS</span>
                 </div>
             </section>
         </article>
@@ -105,11 +122,10 @@
                 <img src="assets/images/about/madsLousdal.jpeg?width=1000" alt="billede af Mads">
             </picture>
             <article>
-                <h2>Hvem er jeg?</h2>
+                <h3>Hvem er jeg?</h3>
                 <p>Hejsa! Mit navn er Mads, og jeg studere multimedie design hos UCN i Aalborg, hvor jeg bliver undervist i både de teknologiske aspekter af frontend, og teorien bag design og brugeroplevelsen. 
                     Også udenfor skolen følger jeg aktivt de nyeste trends på tæt hold, for altid at have fingeren på pulsen med det moderne web. Som resultat af det er jeg ofte ham på holdet som kan finde de kreative løsninger til både design og kodning. For mig er det bedste ved at udvikle hjemmesider når projektet virkeligt tager form, og det smukke design står fuldt funktionelt tilbage på skærmen.<br><br>              
-                    Når jeg ikke sidder foran computeren kan jeg ofte findes i det nærmeste fitness center i gang med at løfte hele verden. Eller i gang med at slynge cocktails over baren på Old Irish Pub.
-                </p>
+                    Når jeg ikke sidder foran computeren kan jeg ofte findes i det nærmeste fitness center i gang med at løfte hele verden.</p>
             </article>
         </section>
         <section class="toolbox animateMe">
@@ -132,12 +148,12 @@
     </section>
     <section class="wrapper contact animateMe">
         <section class="contact-text">
-            <h2>Ik’ vær genert</h2>
+            <h3>Ik’ vær genert</h3>
             <p>Jeg elsker at møde nye mennesker, især hvor der er mulighed for at gro som menneske. Er det dig så send mig en besked!</p>
             <div class="links">
-                <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_email-outline.svg" alt="email"></a>
-                <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_linkedin.svg" alt="linkedin"></a>
-                <a href="https://github.com/MLousdal" class="icon" target="_blank"><img src="assets/images/icons/social/mdi_github.svg" alt="github"></a>
+                <a href="mailto:mads.lousdal@gmail.com" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_email-outline.svg" alt="email"></a>
+                <a href="https://www.linkedin.com/in/mads-lousdal/" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/MLousdal" class="icon" target="_blank" rel="noopener"><img src="assets/images/icons/social/mdi_github.svg" alt="github"></a>
             </div>
         </section>
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqlozdw" method="post">
@@ -155,6 +171,6 @@
             <button type="submit" class="btn-primary">Send Besked</button>
         </form>
     </section>
-    <input type="image" alt="" src="arrow-up-solid.svg" id="toTopBtn" title="Scroll to top" class="scale"></input>
+    <input type="image" alt="arrow up" src="arrow-up-solid.svg" id="toTopBtn" title="Scroll to top" class="scale"></input>
 </body>
 </html>

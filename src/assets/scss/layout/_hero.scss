@@ -32,6 +32,7 @@
 
 @media screen and (max-width: 700px) {
     .hero {
-        gap: $unit-1;
+        gap: $unit-15;
+        // justify-content: space-evenly;
     }
 }
